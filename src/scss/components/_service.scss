@@ -1,0 +1,135 @@
+.service {
+  margin-bottom: 100px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 250px);
+    gap: 30px;
+    grid-template-areas:
+      "a b b"
+      "c d e"
+      "c f g";
+    margin-bottom: 30px;
+  }
+
+  &__item {
+    position: relative;
+    padding: 25px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &.a {
+      grid-area: a;
+    }
+
+    &.b {
+      grid-area: b;
+      background-image: url(../img/banner/img-1.webp);
+    }
+
+    &.c {
+      grid-area: c;
+      background-image: url(../img/banner/img-2.webp);
+    }
+
+    &.d {
+      grid-area: d;
+      background-image: url(../img/banner/img-5.webp);
+    }
+
+    &.e {
+      grid-area: e;
+      background-image: url(../img/banner/img-6.webp);
+    }
+
+    &.f {
+      grid-area: f;
+      background-image: url(../img/banner/img-4.webp);
+    }
+
+    &.g {
+      grid-area: g;
+      background-image: url(../img/banner/img-9.webp);
+    }
+  }
+
+  &__desc {
+    display: inline-flex;
+    background-color: var(--light);
+    color: var(--secondary);
+    padding: 10px 15px;
+    border-radius: 5px;
+    z-index: 5;
+    position: absolute;
+  }
+
+  &__bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 25px;
+    border-radius: 5px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item:not(:first-child):after {
+    content: "";
+    // z-index: 1;
+    opacity: 0.5;
+    background: linear-gradient(to bottom, #040f1b 0%, #08111a 20%, rgba(19, 22, 26, 0) 65%, rgba(27, 26, 26, 0) 100%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    border-radius: 5px;
+  }
+
+}
+
+.form {
+
+
+  &__label {}
+
+  &__input {
+    width: 100%;
+    border-radius: 5px;
+    padding: 15px 15px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    background-color: var(--light);
+    border: 1px solid #fff;
+    color: var(--secondary);
+    transition: all 300ms linear 0ms;
+
+    &:hover {
+      border: 1px solid var(--secondary);
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px solid var(--secondary);
+    }
+  }
+
+  ::placeholder {
+    color: var(--secondary);
+  }
+
+  &__btn {
+    margin: 0 auto 0 0;
+    padding: 15px 40px;
+  }
+}

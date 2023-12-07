@@ -1,0 +1,33 @@
+.title {
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: 600;
+
+  &--hero {
+    font-size: 75px;
+    line-height: 1.1;
+  }
+
+  &--section {
+    font-size: 40px;
+  }
+
+  &--medium {
+    font-size: 24px;
+  }
+
+  &--small {
+    font-size: 18px;
+  }
+}
+
+.subtitle {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.content {
+  &--small {
+    font-size: 16px;
+  }
+}

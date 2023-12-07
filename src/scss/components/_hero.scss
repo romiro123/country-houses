@@ -1,4 +1,6 @@
 .hero {
+  margin-bottom: 100px;
+
   &__container {
     width: 100%;
   }
@@ -13,6 +15,11 @@
     right: 0;
     bottom: 0;
     z-index: 5;
+    color: var(--light);
+  }
+
+  &__wrapp {
+    max-width: 800px;
   }
 
   &__slide {
@@ -44,12 +51,17 @@
     width: 100%;
     height: 100%;
   }
-}
 
+  &__title {
+    margin-bottom: 15px;
+  }
 
+  &__subtitle {
+    margin-bottom: 15px;
+  }
 
-
-
-.tr {
-  max-width: 400px;
+  &__wrapp-btn {
+    display: flex;
+    gap: 30px;
+  }
 }

@@ -69,9 +69,9 @@ const svgSprites = () => {
     .pipe(
       cheerio({
         run: function ($) {
-          $('[fill]').removeAttr('fill');
-          $('[stroke]').removeAttr('stroke');
-          $('[style]').removeAttr('style');
+          // $('[fill]').removeAttr('fill');
+          // $('[stroke]').removeAttr('stroke');
+          // $('[style]').removeAttr('style');
         },
         parserOptions: {
           xmlMode: true
@@ -230,7 +230,7 @@ const images = () => {
 };
 
 const webpImages = () => {
-  return src([`${paths.srcImgFolder}/**/**.{jpg,jpeg,png}`])
+  return src([`${paths.srcImgFolder}/**/**.{jpg,jpeg,png,webp}`])
     .pipe(webp())
     .pipe(dest(paths.buildImgFolder))
 };
@@ -267,8 +267,8 @@ const watchFiles = () => {
 
 const cache = () => {
   return src(`${buildFolder}/**/*.{css,js,svg,png,jpg,jpeg,webp,woff2}`, {
-      base: buildFolder
-    })
+    base: buildFolder
+  })
     .pipe(rev())
     .pipe(revDel())
     .pipe(dest(buildFolder))
