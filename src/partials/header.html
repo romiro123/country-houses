@@ -1,24 +1,50 @@
 <header class="header">
-  <div class="header__container">
-    <div class="header__logo">
-      <a href="http://">
-        <img src="img/2.svg" alt="">
-      </a>
-    </div>
+  <div class="header__container ">
+    <a class="header__logo" href="#">
+      <svg class="header__icon">
+        <use xlink:href="img/sprite.svg#logo"></use>
+      </svg>
+    </a>
+
     <nav class="nav">
-      <ul class="nav__list" style="display: flex;">
-        <li class="nav__item"><a href="#about" class="nav__link" data-menu-item data-scroll>О компании</a></li>
-        <li class="nav__item"><a href="#about" class="nav__link" data-menu-item data-scroll>О компании</a></li>
-        <li class="nav__item"><a href="#about" class="nav__link" data-menu-item data-scroll>О компании</a></li>
-        <li class="nav__item"><a href="#about" class="nav__link" data-menu-item data-scroll>О компании</a></li>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#about" class="nav__link" data-menu-item data-scroll>О компании</a>
+        </li>
+        <li class="nav__item">
+          <a href="#about" class="nav__link" data-menu-item data-scroll>О компании</a>
+        </li>
+        <li class="nav__item">
+          <a href="#about" class="nav__link" data-menu-item data-scroll>О компании</a>
+        </li>
+        <li class="nav__item">
+          <a href="#about" class="nav__link" data-menu-item data-scroll>О компании</a>
+        </li>
       </ul>
     </nav>
-    <ul style="display: flex;">
-      <li>phone</li>
-      <li>mail</li>
-      <li>whats</li>
-      <li>telegram</li>
+
+    <ul class="social" title="">
+      <li class="social__item">
+        <a href="#" target="_blank" class="social__link" aria-label="Наша страничка в Фейсбуке">
+          <svg class="social__icon">
+            <use xlink:href="img/sprite.svg#telegram"></use>
+          </svg></a>
+      </li>
+      <li class="social__item">
+        <a href="#" target="_blank" class="social__link" aria-label="Наша страничка во Вконтакте">
+          <svg class="social__icon">
+            <use xlink:href="img/sprite.svg#whatsapp"></use>
+          </svg></a>
+      </li>
     </ul>
+
+
+    <a href="#" target="_blank" class="header__phone" aria-label="Наша страничка во Вконтакте">
+      <svg class="header__icon--phone">
+        <use xlink:href="img/sprite.svg#phone-def"></use>
+      </svg>
+      <span>+7 (999) 555-22-00</span>
+    </a>
 
   </div>
 </header>
