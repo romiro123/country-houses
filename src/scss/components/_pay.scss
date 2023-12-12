@@ -1,0 +1,57 @@
+.pay {
+  margin-bottom: 100px;
+
+  &__title {}
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 250px);
+    gap: 50px;
+  }
+
+  &__card {
+    position: relative;
+    padding: 25px;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--secondary);
+
+    &:first-child {
+      background-image: url(../img/banner/img-1.webp);
+    }
+
+    &:nth-child(2) {
+      background-image: url(../img/banner/card-1.webp);
+    }
+
+    &:last-child {
+      background-image: url(../img/banner/img-9.webp);
+      grid-column: 1/span 2;
+    }
+
+    &::before {
+      content: "";
+      opacity: 0.5;
+      background: -webkit-gradient(linear, left top, left bottom, from(#040f1b), color-stop(20%, #08111a), color-stop(65%, rgba(19, 22, 26, 0)), to(rgba(27, 26, 26, 0)));
+      background: linear-gradient(to bottom, #040f1b 0%, #08111a 20%, rgba(19, 22, 26, 0) 65%, rgba(27, 26, 26, 0) 100%);
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      border-radius: 5px;
+      position: absolute;
+    }
+  }
+
+  &__desc {
+    position: relative;
+    display: inline-block;
+    background-color: var(--light);
+    border-radius: 5px;
+    padding: 10px 15px;
+  }
+}

@@ -1,13 +1,64 @@
 .works {
   margin-bottom: 100px;
-}
 
-.ww {
-  background-color: silver;
-  height: 100px;
+  &__title {}
+
+  &__list {}
+
+  &__item {
+    height: auto;
+    margin-top: 10px;
+    margin-left: 1px;
+    margin-bottom: 20px;
+  }
+
+  &__card {}
 }
 
 .swiper--works {
   margin-right: 0;
   margin-left: calc((100vw - 1310px) /2);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 12px 0px rgba(0, 0, 0, 0.2509803922);
+
+  &__desc-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    font-size: 16px;
+    margin: auto 0;
+  }
+
+  &__img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px 5px 0 0;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px 20px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__desc {
+    margin-bottom: 10px;
+  }
+
+  &__btn {
+    justify-content: center;
+    padding: 10px 40px;
+    margin-top: 10px;
+  }
 }

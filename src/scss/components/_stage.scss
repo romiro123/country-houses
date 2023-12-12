@@ -37,18 +37,16 @@
 
   &__pagination {
     position: static;
-    text-align: start;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 270px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
 
   &__pagination-item {
     position: relative;
     display: inline-flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     font-family: var(--font-title);
     font-size: 22px;
     width: 110px;
@@ -59,10 +57,6 @@
     margin: 0 !important;
     opacity: 1;
     transition: all 300ms linear 0ms;
-
-    &:not(:last-child) {
-      margin-bottom: 15px !important;
-    }
 
     &::before {
       content: '';
@@ -171,43 +165,3 @@
 
 
 .swiper--stage {}
-
-.swiper-slide:nth-child(1n) {
-  background-color: rgb(206, 17, 17);
-}
-
-.swiper-slide:nth-child(2n) {
-  background-color: rgb(0, 140, 255);
-}
-
-.swiper-slide:nth-child(3n) {
-  background-color: rgb(10, 184, 111);
-}
-
-.swiper-slide:nth-child(4n) {
-  background-color: rgb(211, 122, 7);
-}
-
-.swiper-slide:nth-child(5n) {
-  background-color: rgb(118, 163, 12);
-}
-
-.swiper-slide:nth-child(6n) {
-  background-color: rgb(180, 10, 47);
-}
-
-.swiper-slide:nth-child(7n) {
-  background-color: rgb(35, 99, 19);
-}
-
-.swiper-slide:nth-child(8n) {
-  background-color: rgb(0, 68, 255);
-}
-
-.swiper-slide:nth-child(9n) {
-  background-color: rgb(218, 12, 218);
-}
-
-.swiper-slide:nth-child(10n) {
-  background-color: rgb(54, 94, 77);
-}

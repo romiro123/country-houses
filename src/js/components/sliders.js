@@ -29,8 +29,8 @@ const swiperWorks = new Swiper('.swiper--works', {
     el: ".swiper-pagination--bottom",
     type: "progressbar",
   },
-  slidesPerView: 3,
-  spaceBetween: 30,
+  slidesPerView: 2.8,
+  spaceBetween: 50,
   // centeredSlides: true,
   // speed: 3000,
   // autoplay: {

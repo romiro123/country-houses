@@ -85,6 +85,36 @@
     }
   }
 
+  &--g-b {
+    background-color: var(--primary);
+    color: var(--light);
+    padding: 25px 40px;
+
+    & .arrow-btn {
+      fill: var(--light);
+    }
+
+    &:hover {
+      background-color: var(--secondary);
+      ;
+      color: var(--light);
+
+      & .arrow-btn {
+        fill: var(--light);
+      }
+    }
+
+    &:focus {
+      outline: none;
+      color: var(--light);
+      background-color: var(--secondary);
+
+      & .arrow-btn {
+        fill: var(--light);
+      }
+    }
+  }
+
   &--b-g {
     background-color: var(--secondary);
     color: var(--light);
@@ -182,6 +212,7 @@
       box-shadow: 0 0 0 2px var(--light);
     }
   }
+
 
 }
 
