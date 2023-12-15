@@ -62,6 +62,9 @@
 
   &__logo {}
 
+  &__social {
+    margin-right: 20px;
+  }
 
 
 }
@@ -108,7 +111,6 @@
 
 .social {
   display: flex;
-  margin-right: 20px;
 
   &__item {
     &:not(:last-child) {
