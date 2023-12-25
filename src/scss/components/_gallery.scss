@@ -6,6 +6,10 @@
   &__slide {
     position: relative;
     height: 450px;
+
+    @include big-desktop {
+      height: 350px;
+    }
   }
 
   &__card {
@@ -57,8 +61,12 @@
     gap: 50px;
     // background-color: var(--primary);
     color: var(--light);
-
     border-radius: 5px;
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 25px;
+    }
   }
 
   &__form {

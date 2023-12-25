@@ -1,8 +1,8 @@
 .header {
   width: 100%;
   position: fixed;
+  top: 0;
   z-index: 5;
-  padding: 0 0 0 50px;
   background-color: transparent;
   transition: all .2s linear;
 
@@ -30,6 +30,16 @@
     display: flex;
     align-items: center;
     height: 75px;
+    padding: 0 0 0 50px;
+
+    @include big-desktop {
+      padding: 0 0 0 15px;
+    }
+
+    @include tablet {
+      justify-content: space-between;
+      padding: 0 15px;
+    }
   }
 
   &__logo {}
@@ -39,91 +49,45 @@
     width: 200px;
     height: 50px;
     fill: var(--primary);
-  }
 
-  &__phone {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 16px;
-    background-color: var(--primary);
-    color: var(--light);
-    font-weight: 700;
-    padding: 15px 20px;
-  }
-
-  &__icon--phone {
-    display: block;
-    width: 25px;
-    height: 25px;
-    fill: var(--light);
+    @include big-desktop {
+      width: 170px;
+    }
   }
 
   &__logo {}
 
   &__social {
     margin-right: 20px;
-  }
 
+    @include big-desktop {
+      margin-right: 10px;
+    }
 
-}
-
-.nav {
-  margin: 0 auto;
-
-  &__list {
-    display: flex;
-  }
-
-  &__item {
-    &:not(:last-child) {
-      margin-right: 25px;
+    @include tablet {
+      display: none;
     }
   }
 
-  &__link {
-    color: var(--light);
-    font-family: var(--font-title);
-    font-weight: 600;
-    font-size: 16px;
-    position: relative;
-    padding: 5px 10px;
+  &__social-mobile {
+    display: none;
 
-    &::before {
-      position: absolute;
-      content: '';
-      width: 0%;
-      height: 2px;
-      bottom: -5px;
-      left: 0px;
-      transition: all 300ms linear 0ms;
-    }
-
-    &:hover {
-      &::before {
-        width: 100%;
-        background-color: var(--light);
-      }
-    }
-  }
-}
-
-.social {
-  display: flex;
-
-  &__item {
-    &:not(:last-child) {
-      margin-right: 15px;
+    @include tablet {
+      display: block;
     }
   }
 
-  &__link {}
+  &__phone {
+    @include tablet {
+      display: none;
+    }
+  }
 
-  &__icon {
-    display: block;
-    width: 35px;
-    height: 35px;
-    fill: var(--primary);
+  &__phone-mobile {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
   }
 }

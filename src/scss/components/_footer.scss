@@ -7,9 +7,18 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
+
+    @include tablet {
+      gap: 30px;
+    }
   }
 
-  &__logo {}
+  &__logo {
+    @include tablet {
+      grid-column: 1/span 3;
+      margin: 0 auto;
+    }
+  }
 
   &__logo-icon {
     display: block;
@@ -20,10 +29,19 @@
 
   &__contacts-wrapp {
     margin-left: auto;
+
+    @include small-tablet {
+      grid-column: 1/span 3;
+      margin: 0 auto;
+    }
   }
 
   &__contacts {
     margin-bottom: 15px;
+
+    @include small-tablet {
+      display: none;
+    }
   }
 
   &__contacts-item:not(:last-child) {
@@ -48,6 +66,15 @@
 
   &__nav {
     margin: 0 auto;
+
+    @include tablet {
+      margin: 0 0 0 0;
+      grid-column: 1/span 2;
+    }
+
+    @include small-tablet {
+      display: none;
+    }
   }
 
   &__nav-list {

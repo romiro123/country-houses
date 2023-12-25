@@ -8,6 +8,11 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 250px);
     gap: 50px;
+
+    @include mobile {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 150px);
+    }
   }
 
   &__card {
@@ -21,15 +26,24 @@
 
     &:first-child {
       background-image: url(../img/banner/img-1.webp);
+
+      @include mobile {
+        grid-column: 1/span 2;
+      }
     }
 
     &:nth-child(2) {
       background-image: url(../img/banner/card-1.webp);
+
+      @include mobile {
+        grid-column: 1/span 2;
+      }
     }
 
     &:last-child {
       background-image: url(../img/banner/img-9.webp);
       grid-column: 1/span 2;
+
     }
 
     &::before {

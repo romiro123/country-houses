@@ -26,21 +26,47 @@
       </svg>
     </a>
 
-    <nav class="nav">
+    <nav class="nav menu " title="" data-menu>
       <ul class="nav__list">
         <li class="nav__item">
           <a href="#about" class="nav__link" data-menu-item data-scroll>О компании</a>
         </li>
         <li class="nav__item">
-          <a href="#about" class="nav__link" data-menu-item data-scroll>О компании</a>
+          <a href="#about" class="nav__link" data-menu-item data-scroll>Наши работы</a>
         </li>
         <li class="nav__item">
-          <a href="#about" class="nav__link" data-menu-item data-scroll>О компании</a>
+          <a href="#about" class="nav__link" data-menu-item data-scroll>Услуги</a>
         </li>
         <li class="nav__item">
-          <a href="#about" class="nav__link" data-menu-item data-scroll>О компании</a>
+          <a href="#about" class="nav__link" data-menu-item data-scroll>Проекты</a>
         </li>
       </ul>
+
+      <div class="header__social-mobile">
+        <ul class="social" title="">
+          <li class="social__item">
+            <a href="#" target="_blank" class="social__link" aria-label="Наша страничка в Фейсбуке">
+              <svg class="social__icon">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg></a>
+          </li>
+          <li class="social__item">
+            <a href="#" target="_blank" class="social__link" aria-label="Наша страничка во Вконтакте">
+              <svg class="social__icon">
+                <use xlink:href="img/sprite.svg#whatsapp"></use>
+              </svg></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__phone-mobile">
+        <a href="#" target="_blank" class="big-phone" aria-label="Наша кте">
+          <svg class="big-phone__icon">
+            <use xlink:href="img/sprite.svg#phone-def"></use>
+          </svg>
+          <span>+7 999 555-22-00</span>
+        </a>
+      </div>
     </nav>
 
     <ul class="header__social social" title="">
@@ -58,19 +84,26 @@
       </li>
     </ul>
 
-    <a href="#" target="_blank" class="header__phone" aria-label="Наша страничка во Вконтакте">
-      <svg class="header__icon--phone">
+    <a href="#" target="_blank" class="header__phone big-phone" aria-label="Наша кте">
+      <svg class="big-phone__icon">
         <use xlink:href="img/sprite.svg#phone-def"></use>
       </svg>
       <span>+7 999 555-22-00</span>
     </a>
+
+    <button class="header__burger burger btn-reset" aria-label="Открыть меню" aria-expanded="false" data-burger="">
+      <span class="burger__icon"><span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </span>
+    </button>
 
   </div>
 </header>
     <main class="main">
       <section class="hero">
 
-  <div class="swiper swiper--hero">
+  <div class="hero__swiper swiper swiper--hero">
 
     <div class="swiper-wrapper">
 
@@ -90,31 +123,13 @@
               <p class="hero__subtitle subtitle">Our Group is recognized as one of the World’s leading Industry
                 Corporation serving an impressive list of long-term clients with experience and expertise.</p>
               <div class="hero__wrapp-btn">
-                <button class="btn btn--g-w">
+                <button class="hero__btn btn btn--g-w">
                   <span> Explore Our Services</span>
                   <svg class="arrow-btn">
                     <use xlink:href="img/sprite.svg#arrow-m"></use>
                   </svg>
                 </button>
-                <button class="btn btn--w-g">About US!</button>
-
-                <!-- <button class="btn btn--w-b">
-                  <span> Explore Our Services</span>
-                  <svg class="arrow-btn">
-                    <use xlink:href="img/sprite.svg#arrow-m"></use>
-                  </svg>
-                </button>
-
-                <button class="btn btn--b-g">
-                  <span> Explore Our Services</span>
-                  <svg class="arrow-btn">
-                    <use xlink:href="img/sprite.svg#arrow-m"></use>
-                  </svg>
-                </button>
-
-                <button class="btn btn--t-g">About US!</button>
-
-                <button class="btn btn--t-w">About US!</button> -->
+                <button class="hero__btn btn btn--w-g">About US!</button>
               </div>
             </div>
           </div>
@@ -522,15 +537,16 @@
         </article>
       </div>
     </div>
+    <div class="works__pagination swiper-pagination"></div>
   </div>
 
 </section>
       <section class="about">
   <div class="container">
-    <h2 class="title title--section">About us!</h2>
+    <h2 class="title title--section">О нас</h2>
 
     <p>«Территория Комфорта» — это компания, которая с гордостью занимается строительством качественных загородных домов
-      из кирпича и монолитных конструкций в прекрасных городах Набережные Челны, Нижнекамск и Елабуга.</p>
+      из кирпича и монолитных конструкций в городах Набережные Челны, Нижнекамск и Елабуга.</p>
 
     <br><br>
     <p>
@@ -545,7 +561,7 @@
     <p>### Региональная Адаптация<br>
       «Территория Комфорта» прекрасно понимает, что каждый регион имеет свои особенности и требования. Поэтому, строя
       загородные дома в Набережных Челнах, Нижнекамске и Елабуге, компания учитывает местный климат, архитектурные
-      особенности и предпочтения местных жителей, создавая дома, которые идеально вписываются в окружающую среду.
+      особенности и предпочтения жителей, создавая дома, которые идеально вписываются в окружающую среду.
     </p>
 
     <br><br>
@@ -614,7 +630,7 @@
 </section>
       <section class="gallery">
   <div class="container">
-    <h2 class="gallery__title title title--section">Наши работы</h2>
+    <h2 class="gallery__title title title--section">Наши проекты</h2>
   </div>
   <div class="gallery__swiper swiper swiper--gallery">
     <div class="swiper-wrapper ">
@@ -840,64 +856,16 @@
   </div>
 </section>
       <section class="advantages">
-  <!-- <div class="container">
-    <h2 class="title title-section">Преимущества</h2>
-    <ul>
-      <li>
-        <article>
-          <h3>ОПЫТ ЗАГОРОДНОГО СТРОИТЕЛЬСТВА БОЛЕЕ 10 ЛЕТ</h3>
-          <p>Наша компания обладает обширным опытом в загородном строительстве более 10 лет, что позволяет нам
-            гарантировать высокое качество и профессиональный подход к каждому проекту</p>
-        </article>
-      </li>
-      <li>
-        <article>
-          <h3>СТРОИТЕЛЬСТВО ПО СНИП</h3>
-          <p>Мы осуществляем строительство согласно требованиям СНиП, обеспечивая безопасность, надежность и
-            соответствие
-            высоким стандартам качества в каждом проекте.</p>
-        </article>
-      </li>
-      <li>
-        <article>
-          <h3>КОНТРОЛЬ СТРОИТЕЛЬНЫХ РАБОТ НА КАЖДОМ ЭТАПЕ СТРОИТЬСТВА</h3>
-          <p>Мы осуществляем тщательный контроль строительных работ на каждом этапе строительства, гарантируя высокое
-            качество и соответствие всем спецификациям и требованиям проекта</p>
-        </article>
-      </li>
-      <li>
-        <article>
-          <h3>ГАРАНТИЯ ОТ 5 ЛЕТ</h3>
-          <p>Мы предоставляем гарантию на наши работы в течение 5 лет, что подчеркивает наше стремление к долгосрочным
-            отношениям с клиентами и уверенность в качестве предоставляемых услуг</p>
-        </article>
-      </li>
-      <li>
-        <article>
-          <h3>50+ ПОСТОРОЕННЫХ ДОМОВ ПО РТ</h3>
-          <p>Наш опыт в строительстве подтверждается более чем 50 успешно построенными домами, соответствующими
-            требованиям и нормативам строительства, предусмотренным в Республиканских требованиях</p>
-        </article>
-      </li>
-      <li>
-        <article>
-          <h3>ПЕРСОНАЛЬНЫЙ МЕНЕДЖЕР ПОД ВАШ ПРОЕКТ 24/7</h3>
-          <p>Каждому проекту назначается персональный менеджер, доступный 24/7, гарантируя индивидуальное внимание и
-            оперативную поддержку на всех этапах реализации проекта</p>
-        </article>
-      </li>
-    </ul>
-  </div> -->
   <div class="advantages__wrapp">
 
-    <div class="advantages__left">
-      <picture>
-        <!-- <source srcset="img/hero/slide-1-576.webp" type="image/webp" media="(max-width: 576px)">
+    <!-- <div class="advantages__left">
+      <picture>-->
+    <!-- <source srcset="img/hero/slide-1-576.webp" type="image/webp" media="(max-width: 576px)">
         <source srcset="img/hero/slide-1-1024.webp" type="image/webp" media="(max-width: 1439px)">
         <source srcset="img/hero/slide-1-1440.webp" type="image/webp" media="(max-width: 1919px)"> -->
-        <img loading="lazy" src="img/banner/img-8.webp" class="promo__img img" height="500" alt="">
+    <!-- <img loading="lazy" src="img/banner/img-8.webp" class="promo__img img" height="500" alt="">
       </picture>
-    </div>
+    </div> -->
     <div class="advantages__right">
       <h2 class="advantages__title title title--section">Преимущества</h2>
       <ul class="advantages__list">

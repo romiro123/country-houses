@@ -3,7 +3,6 @@
 
   &__wrapp {
     display: flex;
-    height: 700px;
   }
 
   &__left {
@@ -15,11 +14,28 @@
     border-radius: 5px;
     width: 40%;
     z-index: 1;
+    transform: scale(1.03);
+
+    @include big-desktop {
+      width: 60%;
+    }
+
+    @include tablet {
+      width: 100%;
+    }
+
+    @include mobile {
+      padding: 40px 15px;
+    }
   }
 
   &__right {
     margin-left: -10px;
     width: calc(60% + 10px);
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &__img {
@@ -29,10 +45,18 @@
 
   &__title {
     margin-bottom: auto;
+
+    @include big-desktop {
+      margin-bottom: 25px;
+    }
   }
 
   &__subtitle {
     margin-bottom: 40px;
+
+    @include big-desktop {
+      margin-bottom: 25px;
+    }
   }
 
   &__btn {

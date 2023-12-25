@@ -22,6 +22,10 @@
     max-width: 800px;
   }
 
+  &__swiper {
+    height: 900px;
+  }
+
   &__slide {
 
     &::after,
@@ -64,4 +68,5 @@
     display: flex;
     gap: 30px;
   }
+
 }

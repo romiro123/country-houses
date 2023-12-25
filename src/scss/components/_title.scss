@@ -6,11 +6,20 @@
   &--hero {
     font-size: 75px;
     line-height: 1.1;
+
+    @include big-desktop {
+      font-size: 60px;
+    }
   }
 
   &--section {
     font-size: 40px;
     margin-bottom: 25px;
+
+    @include big-desktop {
+      font-size: 34px;
+      margin-bottom: 15px;
+    }
   }
 
   &--medium {

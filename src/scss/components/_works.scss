@@ -10,14 +10,35 @@
     margin-top: 10px;
     margin-left: 1px;
     margin-bottom: 20px;
+
+    @include big-desktop {
+      margin-top: 0;
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
   }
 
   &__card {}
+
+  &__pagination {
+    position: relative;
+    padding-top: 20px;
+
+    & .swiper-pagination-bullet-active {
+      background: var(--primary);
+    }
+  }
 }
 
 .swiper--works {
   margin-right: 0;
-  margin-left: calc((100vw - 1310px) /2);
+  margin-left: calc((100vw - var(--container-width)) /2);
+
+  @include big-desktop {
+    margin: 0 auto;
+    padding: 0 var(--container-offset);
+    max-width: var(--container-width);
+  }
 }
 
 .card {

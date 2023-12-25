@@ -24,30 +24,66 @@ const swiperWorks = new Swiper('.swiper--works', {
   //   nextEl: '.swiper-button-next',
   //   prevEl: '.swiper-button-prev',
   // },
-  // loop: true,
   pagination: {
-    el: ".swiper-pagination--bottom",
-    type: "progressbar",
+    el: ".swiper-pagination",
+    dynamicBullets: true,
   },
-  slidesPerView: 2.8,
-  spaceBetween: 50,
   // centeredSlides: true,
   // speed: 3000,
   // autoplay: {
   //   delay: 5000,
   // },
   loop: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+    576: {
+      slidesPerView: 1.2,
+      spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1440: {
+      slidesPerView: 2.8,
+      spaceBetween: 50,
+    }
+  },
 });
 
 const swiperGallery = new Swiper('.swiper--gallery', {
-  // slidesPerView: 1,
-  slidesPerView: 4,
-  spaceBetween: 30,
   centeredSlides: true,
   loop: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1.4,
+      spaceBetween: 15,
+    },
+    576: {
+      slidesPerView: 1.6,
+      spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 2.6,
+      spaceBetween: 30,
+    },
+    1024: {
+      slidesPerView: 3.5,
+      spaceBetween: 30,
+    },
+    1440: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    }
+  }
 });
-
-
 
 const swiperStage = new Swiper(".swiper--stage", {
   grabCursor: true,
@@ -63,7 +99,7 @@ const swiperStage = new Swiper(".swiper--stage", {
   },
 
   pagination: {
-    el: ".swiper-pagination",
+    el: ".stage__pagination",
 
     clickable: true,
     renderBullet: function (index, t1) {

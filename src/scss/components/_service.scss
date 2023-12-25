@@ -11,6 +11,37 @@
       "c d e"
       "c f g";
     margin-bottom: 30px;
+
+    @include tablet {
+      gap: 15px;
+      grid-template-rows: repeat(4, 250px);
+      grid-template-areas:
+        "a b b"
+        "c c d"
+        "e f f"
+        "g g g";
+    }
+
+    @include small-tablet {
+      grid-template-areas:
+        "a b b"
+        "c c d"
+        "f e e"
+        "g g g";
+    }
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: 2em repeat(6, 150px);
+
+      grid-template-areas: "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f"
+        "g";
+    }
   }
 
   &__item {
@@ -21,8 +52,25 @@
     background-position: center;
     background-repeat: no-repeat;
 
+    @include small-tablet {
+      padding: 15px;
+    }
+
+
+
     &.a {
       grid-area: a;
+
+      @include tablet {
+        display: flex;
+        align-items: center;
+        text-align: center;
+      }
+
+      @include mobile {
+        padding: 0 0 0 15px;
+      }
+
     }
 
     &.b {
@@ -62,8 +110,12 @@
     color: var(--secondary);
     padding: 10px 15px;
     border-radius: 5px;
-    z-index: 5;
+    z-index: 1;
     position: absolute;
+
+    @include small-tablet {
+      margin-right: 15px;
+    }
   }
 
   &__bottom {
@@ -74,6 +126,11 @@
     color: var(--light);
     padding: 25px;
     border-radius: 5px;
+
+    @include mobile {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 25px;
+    }
   }
 
   &__form {

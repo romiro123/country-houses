@@ -28,11 +28,25 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 30px;
+
+    @include tablet {
+      grid-template-columns: repeat(3, 1fr);
+      // grid-template-rows: auto;
+    }
   }
 
   &__desc {
     grid-column: 1 /span 2;
     padding: 0 60px 40px 60px;
+
+    @include big-desktop {
+      grid-column: 1 /span 3;
+    }
+
+    @include tablet {
+      grid-column: 1 /span 3;
+      grid-row: 1;
+    }
   }
 
   &__pagination {
@@ -40,6 +54,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
+
+    @include tablet {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 
   &__pagination-item {
@@ -112,6 +130,15 @@
     position: relative;
     grid-column: 3 /span 4;
     width: 100%;
+
+    @include big-desktop {
+      grid-column: 4 /span 3;
+    }
+
+    @include tablet {
+      grid-column: 1 /span 3;
+      grid-row: 2;
+    }
   }
 
   &__slide {
@@ -130,13 +157,6 @@
       border-radius: 5px;
     }
 
-    // & .swiper-slide-active {
-    //   // & .stage__content {
-    //   //   background-color: red;
-    //   //   transform: translateX(50px);
-    //   // }
-    //   background-color: red;
-    // }
     &.swiper-slide-active {
       & .stage__content {
         transform: translate(0px, 0px);

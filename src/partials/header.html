@@ -6,21 +6,47 @@
       </svg>
     </a>
 
-    <nav class="nav">
+    <nav class="nav menu " title="" data-menu>
       <ul class="nav__list">
         <li class="nav__item">
           <a href="#about" class="nav__link" data-menu-item data-scroll>О компании</a>
         </li>
         <li class="nav__item">
-          <a href="#about" class="nav__link" data-menu-item data-scroll>О компании</a>
+          <a href="#about" class="nav__link" data-menu-item data-scroll>Наши работы</a>
         </li>
         <li class="nav__item">
-          <a href="#about" class="nav__link" data-menu-item data-scroll>О компании</a>
+          <a href="#about" class="nav__link" data-menu-item data-scroll>Услуги</a>
         </li>
         <li class="nav__item">
-          <a href="#about" class="nav__link" data-menu-item data-scroll>О компании</a>
+          <a href="#about" class="nav__link" data-menu-item data-scroll>Проекты</a>
         </li>
       </ul>
+
+      <div class="header__social-mobile">
+        <ul class="social" title="">
+          <li class="social__item">
+            <a href="#" target="_blank" class="social__link" aria-label="Наша страничка в Фейсбуке">
+              <svg class="social__icon">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg></a>
+          </li>
+          <li class="social__item">
+            <a href="#" target="_blank" class="social__link" aria-label="Наша страничка во Вконтакте">
+              <svg class="social__icon">
+                <use xlink:href="img/sprite.svg#whatsapp"></use>
+              </svg></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header__phone-mobile">
+        <a href="#" target="_blank" class="big-phone" aria-label="Наша кте">
+          <svg class="big-phone__icon">
+            <use xlink:href="img/sprite.svg#phone-def"></use>
+          </svg>
+          <span>+7 (999) 555-22-00</span>
+        </a>
+      </div>
     </nav>
 
     <ul class="header__social social" title="">
@@ -38,13 +64,19 @@
       </li>
     </ul>
 
-
-    <a href="#" target="_blank" class="header__phone" aria-label="Наша страничка во Вконтакте">
-      <svg class="header__icon--phone">
+    <a href="#" target="_blank" class="header__phone big-phone" aria-label="Наша кте">
+      <svg class="big-phone__icon">
         <use xlink:href="img/sprite.svg#phone-def"></use>
       </svg>
       <span>+7 (999) 555-22-00</span>
     </a>
+
+    <button class="header__burger burger btn-reset" aria-label="Открыть меню" aria-expanded="false" data-burger="">
+      <span class="burger__icon"><span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </span>
+    </button>
 
   </div>
 </header>
