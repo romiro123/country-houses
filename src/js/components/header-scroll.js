@@ -1,6 +1,7 @@
 let lastScroll = 0;
 const defaultOffset = 200;
 const header = document.querySelector('.header');
+const menu = document.querySelector('.menu');
 
 
 const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
@@ -11,10 +12,12 @@ window.addEventListener('scroll', () => {
     //scroll down
     header.classList.add('header__hide');
     header.classList.add('header__light');
+    menu.classList.add('menu--light');
 
   }
   if (scrollPosition() < defaultOffset) {
     header.classList.remove('header__light');
+    menu.classList.remove('menu--light');
   }
 
   else if (scrollPosition() < lastScroll && containHide()) {

@@ -15,6 +15,10 @@
     padding: 20px 30px;
   }
 
+  @include mobile {
+    padding: 15px 20px;
+  }
+
   &--g-w {
     background-color: var(--primary);
     color: var(--light);
@@ -242,6 +246,11 @@
     padding: 0 15px;
   }
 
+  @include tablet {
+    padding: 15px 30px;
+    border-radius: 5px;
+  }
+
   &:hover {
     background-color: var(--secondary);
     color: var(--light);
@@ -255,6 +264,10 @@
 
     @include big-desktop {
       display: none;
+    }
+
+    @include tablet {
+      display: block;
     }
   }
 }

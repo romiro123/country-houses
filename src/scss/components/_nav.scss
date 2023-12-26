@@ -3,6 +3,11 @@
 
   &__list {
     display: flex;
+
+    @include tablet {
+      flex-direction: column;
+      margin-bottom: 25px;
+    }
   }
 
   &__item {
@@ -11,6 +16,10 @@
 
       @include big-desktop {
         margin-right: 10px;
+      }
+
+      @include tablet {
+        margin-bottom: 15px;
       }
     }
   }
@@ -22,6 +31,10 @@
     font-size: 16px;
     position: relative;
     padding: 5px 10px;
+
+    @include tablet {
+      font-size: 22px;
+    }
 
     &::before {
       position: absolute;

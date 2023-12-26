@@ -1,6 +1,10 @@
 .advantages {
   margin-bottom: 100px;
 
+  @include mobile {
+    margin-bottom: 50px;
+  }
+
   &__title {}
 
   &__wrapp {
@@ -40,7 +44,8 @@
     }
 
     @include mobile {
-      padding: 20px 15px;
+      transform: scale(1);
+      padding: 25px 15px;
     }
   }
 
@@ -65,7 +70,7 @@
 
     @include mobile {
       background-size: 50px;
-      padding: 90px 15px 15px 15px;
+      padding: 90px 15px 25px 15px;
       background-position: center 20px;
     }
 
@@ -102,14 +107,19 @@
     }
 
     &-title {
-      font-size: 18px;
-      font-weight: bold;
       margin-bottom: 5px;
+
+      @include mobile {
+        text-align: center;
+      }
     }
 
     &-text {
       font-size: 16px;
-      font-weight: 400;
+
+      @include mobile {
+        text-align: center;
+      }
     }
   }
 }

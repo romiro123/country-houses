@@ -240,6 +240,7 @@ _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Fancybox.bind('[data-fancybox]', {
 let lastScroll = 0;
 const defaultOffset = 200;
 const header = document.querySelector('.header');
+const menu = document.querySelector('.menu');
 const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
 const containHide = () => header.classList.contains('header__hide');
 window.addEventListener('scroll', () => {
@@ -247,9 +248,11 @@ window.addEventListener('scroll', () => {
     //scroll down
     header.classList.add('header__hide');
     header.classList.add('header__light');
+    menu.classList.add('menu--light');
   }
   if (scrollPosition() < defaultOffset) {
     header.classList.remove('header__light');
+    menu.classList.remove('menu--light');
   } else if (scrollPosition() < lastScroll && containHide()) {
     //scroll up
     header.classList.remove('header__hide');
@@ -287,6 +290,7 @@ const swiperHero = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper--
   // },
   // loop: true,
 });
+
 const swiperWorks = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper--works', {
   slidesPerView: 1,
   // navigation: {

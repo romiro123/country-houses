@@ -1,6 +1,10 @@
 .service {
   margin-bottom: 100px;
 
+  @include mobile {
+    margin-bottom: 50px;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -56,8 +60,6 @@
       padding: 15px;
     }
 
-
-
     &.a {
       grid-area: a;
 
@@ -68,7 +70,7 @@
       }
 
       @include mobile {
-        padding: 0 0 0 15px;
+        padding: 0 0 0 0px;
       }
 
     }
@@ -131,6 +133,10 @@
       grid-template-columns: repeat(1, 1fr);
       gap: 25px;
     }
+  }
+
+  &__subtitle {
+    margin-bottom: 15px;
   }
 
   &__form {

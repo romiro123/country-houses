@@ -1,6 +1,10 @@
 .hero {
   margin-bottom: 100px;
 
+  @include mobile {
+    margin-bottom: 50px;
+  }
+
   &__container {
     width: 100%;
   }
@@ -24,6 +28,10 @@
 
   &__swiper {
     height: 900px;
+
+    @include mobile {
+      height: 700px;
+    }
   }
 
   &__slide {
@@ -67,6 +75,16 @@
   &__wrapp-btn {
     display: flex;
     gap: 30px;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
+  &__btn {
+    @include mobile {
+      margin-right: auto;
+    }
   }
 
 }

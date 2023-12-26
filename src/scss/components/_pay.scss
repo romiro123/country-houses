@@ -1,6 +1,10 @@
 .pay {
   margin-bottom: 100px;
 
+  @include mobile {
+    margin-bottom: 50px;
+  }
+
   &__title {}
 
   &__list {
