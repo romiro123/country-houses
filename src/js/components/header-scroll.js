@@ -25,6 +25,6 @@ window.addEventListener('scroll', () => {
     header.classList.remove('header__hide');
   }
 
-  console.log(lastScroll)
+  // console.log(lastScroll)
   lastScroll = scrollPosition();
 })

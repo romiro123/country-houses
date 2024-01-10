@@ -31,7 +31,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_gallery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/gallery */ "./src/js/components/gallery.js");
 /* harmony import */ var _components_header_scroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/header-scroll */ "./src/js/components/header-scroll.js");
 /* harmony import */ var _components_header_scroll__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_header_scroll__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_map__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/map */ "./src/js/components/map.js");
+/* harmony import */ var _components_map__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_map__WEBPACK_IMPORTED_MODULE_3__);
 console.log('components');
+
 
 
 
@@ -257,8 +260,71 @@ window.addEventListener('scroll', () => {
     //scroll up
     header.classList.remove('header__hide');
   }
-  console.log(lastScroll);
+
+  // console.log(lastScroll)
   lastScroll = scrollPosition();
+});
+
+/***/ }),
+
+/***/ "./src/js/components/map.js":
+/*!**********************************!*\
+  !*** ./src/js/components/map.js ***!
+  \**********************************/
+/***/ (() => {
+
+document.addEventListener("DOMContentLoaded", function () {
+  ymaps.ready(init);
+  let windowInnerWidth = window.innerWidth;
+  let y;
+  let x;
+  let zoom;
+  let iconY = 55.71339976040793;
+  let iconX = 52.39788032773994;
+  if (windowInnerWidth >= 576) {
+    y = 55.713460328680306;
+    x = 52.39791251424815;
+    zoom = 16;
+  } else {
+    y = 55.73907597124874;
+    x = 52.4024098543674;
+    zoom = 15;
+  }
+  function init() {
+    let myMap = new ymaps.Map("map", {
+      center: [y, x],
+      zoom: 16,
+      controls: ['zoomControl'],
+      behaviors: ['multiTouch']
+    }, {
+      suppressMapOpenBlock: true
+    });
+    let myPlacemark = new ymaps.Placemark([iconY, iconX], {}, {
+      iconLayout: 'default#image',
+      iconImageHref: './img/svg/geo.svg',
+      iconImageSize: [40, 40],
+      iconImageOffset: [-15, -42]
+    });
+    myMap.behaviors.disable('scrollZoom').disable('drag').enable('multiTouch');
+    myMap.geoObjects.add(myPlacemark);
+
+    // let myMap = new ymaps.Map("map", {
+    //   center: [y, x],
+    //   zoom: zoom,
+    //   controls: []
+    // }, {
+    //   suppressMapOpenBlock: true
+    // });
+
+    // let myPlacemark = new ymaps.Placemark([iconY, iconX], {}, {
+    //   iconLayout: 'default#image',
+    //   iconImageHref: './img/icon-map.svg',
+    //   iconImageSize: [30, 42],
+    //   iconImageOffset: [-15, -42]
+    // });
+    // myMap.behaviors.disable('scrollZoom');
+    // myMap.geoObjects.add(myPlacemark);
+  }
 });
 
 /***/ }),
@@ -290,7 +356,6 @@ const swiperHero = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper--
   // },
   // loop: true,
 });
-
 const swiperWorks = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper--works', {
   slidesPerView: 1,
   // navigation: {
