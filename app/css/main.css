@@ -1097,10 +1097,24 @@ ul {
   -ms-transform: translateX(0);
   transform: translateX(0);
 }
+@media (max-width: 1024px) {
+  .gallery__card:hover .gallery__description {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
 .gallery__card:hover .gallery__img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
+}
+@media (max-width: 1024px) {
+  .gallery__card:hover .gallery__img {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
 }
 .gallery__img {
   height: 100%;
@@ -1972,17 +1986,43 @@ ul {
   position: relative;
   padding: 80px 0;
 }
+@media (max-width: 1024px) {
+  .contacts {
+    padding: 40px 0;
+  }
+}
 .contacts__container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[8];
-  grid-template-columns: repeat(8, 1fr);
+  -ms-grid-columns: (1fr)[10];
+  grid-template-columns: repeat(10, 1fr);
   gap: 30px;
+}
+@media (max-width: 1024px) {
+  .contacts__container {
+    -ms-grid-columns: (1fr)[6];
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .contacts__container {
+    -ms-grid-columns: (1fr)[5];
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .contacts__container {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.contacts__title {
+  color: var(--light);
 }
 .contacts__content {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1/span 3;
+  -ms-grid-column-span: 4;
+  grid-column: 1/span 4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1991,10 +2031,22 @@ ul {
   -ms-flex-direction: column;
   flex-direction: column;
   padding: 30px;
-  background-color: var(--light);
+  background-color: var(--primary);
   border-radius: 5px;
 }
-.contacts__address {
+@media (max-width: 1024px) {
+  .contacts__content {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/span 3;
+  }
+}
+@media (max-width: 576px) {
+  .contacts__content {
+    background-color: rgba(55, 190, 117, 0.8);
+  }
+}
+.contacts__list {
   margin-bottom: 35px;
 }
 .contacts__item:not(:last-child) {
@@ -2002,8 +2054,17 @@ ul {
 }
 .contacts__name {
   display: block;
+  color: var(--light);
+}
+.contacts__adress {
+  font-weight: 600;
+  color: var(--lighten);
+}
+.contacts__link {
+  color: var(--lighten);
   font-weight: 600;
 }
+
 #map {
   width: 100%;
   height: 100%;

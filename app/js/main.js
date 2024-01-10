@@ -241,7 +241,12 @@ _fancyapps_ui__WEBPACK_IMPORTED_MODULE_0__.Fancybox.bind('[data-fancybox]', {
 /***/ (() => {
 
 let lastScroll = 0;
-const defaultOffset = 200;
+let defaultOffset;
+if (window.innerWidth >= 576) {
+  defaultOffset = 200;
+} else {
+  defaultOffset = 50;
+}
 const header = document.querySelector('.header');
 const menu = document.querySelector('.menu');
 const scrollPosition = () => window.pageYOffset || document.documentElement.scrollTop;
@@ -281,19 +286,23 @@ document.addEventListener("DOMContentLoaded", function () {
   let zoom;
   let iconY = 55.71339976040793;
   let iconX = 52.39788032773994;
-  if (windowInnerWidth >= 576) {
+  if (windowInnerWidth >= 1024) {
     y = 55.713460328680306;
     x = 52.39791251424815;
     zoom = 16;
+  } else if (windowInnerWidth >= 576) {
+    y = 55.71336810295606;
+    x = 52.39378621160888;
+    zoom = 16;
   } else {
-    y = 55.73907597124874;
-    x = 52.4024098543674;
-    zoom = 15;
+    y = 55.71280481304755;
+    x = 52.39671518385317;
+    zoom = 17;
   }
   function init() {
     let myMap = new ymaps.Map("map", {
       center: [y, x],
-      zoom: 16,
+      zoom: zoom,
       controls: ['zoomControl'],
       behaviors: ['multiTouch']
     }, {
@@ -301,9 +310,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
     let myPlacemark = new ymaps.Placemark([iconY, iconX], {}, {
       iconLayout: 'default#image',
-      iconImageHref: './img/svg/geo.svg',
-      iconImageSize: [40, 40],
-      iconImageOffset: [-15, -42]
+      iconImageHref: './img/svg/geo-house.svg',
+      iconImageSize: [50, 50],
+      iconImageOffset: [-20, -52]
     });
     myMap.behaviors.disable('scrollZoom').disable('drag').enable('multiTouch');
     myMap.geoObjects.add(myPlacemark);
@@ -356,6 +365,7 @@ const swiperHero = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper--
   // },
   // loop: true,
 });
+
 const swiperWorks = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper--works', {
   slidesPerView: 1,
   // navigation: {

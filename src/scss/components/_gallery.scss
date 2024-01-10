@@ -30,10 +30,18 @@
         visibility: visible;
         opacity: 1;
         transform: translateX(0);
+
+        @include tablet {
+          transform: none;
+        }
       }
 
       & .gallery__img {
         transform: scale(1.1);
+
+        @include tablet {
+          transform: scale(1);
+        }
       }
     }
   }

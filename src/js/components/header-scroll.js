@@ -1,5 +1,11 @@
 let lastScroll = 0;
-const defaultOffset = 200;
+let defaultOffset;
+if (window.innerWidth >= 576) {
+  defaultOffset = 200;
+}
+else {
+  defaultOffset = 50;
+}
 const header = document.querySelector('.header');
 const menu = document.querySelector('.menu');
 
@@ -13,7 +19,6 @@ window.addEventListener('scroll', () => {
     header.classList.add('header__hide');
     header.classList.add('header__light');
     menu.classList.add('menu--light');
-
   }
   if (scrollPosition() < defaultOffset) {
     header.classList.remove('header__light');
