@@ -11,9 +11,9 @@
     grid-template-rows: repeat(3, 250px);
     gap: 30px;
     grid-template-areas:
-      "a b b"
-      "c d e"
-      "c f g";
+      "a c c"
+      "b d e"
+      "b f g";
     margin-bottom: 30px;
 
     @include tablet {
@@ -77,32 +77,32 @@
 
     &.b {
       grid-area: b;
-      background-image: url(../img/banner/img-1.webp);
+      background-image: url(../img/service/stroitelstvo.webp);
     }
 
     &.c {
       grid-area: c;
-      background-image: url(../img/banner/img-2.webp);
+      background-image: url(../img/service/prodazha.webp);
     }
 
     &.d {
       grid-area: d;
-      background-image: url(../img/banner/img-5.webp);
+      background-image: url(../img/service/podbor.webp);
     }
 
     &.e {
       grid-area: e;
-      background-image: url(../img/banner/img-6.webp);
+      background-image: url(../img/service/proyektirovaniye.webp);
     }
 
     &.f {
       grid-area: f;
-      background-image: url(../img/banner/img-4.webp);
+      background-image: url(../img/service/3d.webp);
     }
 
     &.g {
       grid-area: g;
-      background-image: url(../img/banner/img-9.webp);
+      background-image: url(../img/service/chistovaya-otdelka.webp);
     }
   }
 
@@ -114,10 +114,11 @@
     border-radius: 5px;
     z-index: 1;
     position: absolute;
+    margin-right: 15px;
 
-    @include small-tablet {
-      margin-right: 15px;
-    }
+    // @include small-tablet {
+    //   margin-right: 15px;
+    // }
   }
 
   &__bottom {

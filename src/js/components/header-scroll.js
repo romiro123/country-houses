@@ -29,7 +29,5 @@ window.addEventListener('scroll', () => {
     //scroll up
     header.classList.remove('header__hide');
   }
-
-  // console.log(lastScroll)
   lastScroll = scrollPosition();
 })

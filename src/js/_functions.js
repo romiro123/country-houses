@@ -38,16 +38,10 @@ import { enableScroll } from './functions/enable-scroll';
 // const tabs = new GraphTabs('tab');
 
 // Получение высоты шапки сайта (не забудьте вызвать функцию)
-// import { getHeaderHeight } from './functions/header-height';
+//import { getHeaderHeight } from './functions/header-height';
 
 // Подключение плагина кастом-скролла
 // import 'simplebar';
-
-// Подключение плагина для позиционирования тултипов
-// import { createPopper, right} from '@popperjs/core';
-// createPopper(el, tooltip, {
-//   placement: 'right'
-// });
 
 // Подключение свайпера
 // import Swiper, { Navigation, Pagination } from 'swiper';

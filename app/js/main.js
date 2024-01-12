@@ -93,16 +93,10 @@ console.log((0,_functions_mobile_check__WEBPACK_IMPORTED_MODULE_0__.mobileCheck)
 // const tabs = new GraphTabs('tab');
 
 // Получение высоты шапки сайта (не забудьте вызвать функцию)
-// import { getHeaderHeight } from './functions/header-height';
+//import { getHeaderHeight } from './functions/header-height';
 
 // Подключение плагина кастом-скролла
 // import 'simplebar';
-
-// Подключение плагина для позиционирования тултипов
-// import { createPopper, right} from '@popperjs/core';
-// createPopper(el, tooltip, {
-//   placement: 'right'
-// });
 
 // Подключение свайпера
 // import Swiper, { Navigation, Pagination } from 'swiper';
@@ -265,8 +259,6 @@ window.addEventListener('scroll', () => {
     //scroll up
     header.classList.remove('header__hide');
   }
-
-  // console.log(lastScroll)
   lastScroll = scrollPosition();
 });
 
@@ -550,6 +542,7 @@ const enableScroll = () => {
   const fixBlocks = document?.querySelectorAll('.fixed-block');
   const body = document.body;
   const pagePosition = parseInt(_vars__WEBPACK_IMPORTED_MODULE_0__["default"].bodyEl.dataset.position, 10);
+  console.log(pagePosition);
   fixBlocks.forEach(el => {
     el.style.paddingRight = '0px';
   });
@@ -560,8 +553,10 @@ const enableScroll = () => {
     top: pagePosition,
     left: 0
   });
+  console.log(pagePosition);
   _vars__WEBPACK_IMPORTED_MODULE_0__["default"].bodyEl.removeAttribute('data-position');
   _vars__WEBPACK_IMPORTED_MODULE_0__["default"].htmlEl.style.scrollBehavior = 'smooth';
+  _vars__WEBPACK_IMPORTED_MODULE_0__["default"].htmlEl.style.scrollPaddingTop = '80px';
 };
 
 /***/ }),

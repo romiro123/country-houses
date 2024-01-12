@@ -46,6 +46,7 @@
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -77,6 +78,16 @@
     margin-bottom: 10px;
   }
 
+  &__i {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 5px 15px;
+    background-color: var(--primary);
+    border-radius: 5px;
+    color: var(--light);
+  }
+
   &__desc {
     margin-bottom: 10px;
   }
@@ -84,6 +95,6 @@
   &__btn {
     justify-content: center;
     padding: 10px 40px;
-    margin-top: 10px;
+    margin-top: auto;
   }
 }

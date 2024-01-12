@@ -29,7 +29,7 @@
     color: var(--secondary);
 
     &:first-child {
-      background-image: url(../img/banner/img-1.webp);
+      background-image: url(../img/service/nal.webp);
 
       @include mobile {
         grid-column: 1/span 2;
@@ -37,7 +37,7 @@
     }
 
     &:nth-child(2) {
-      background-image: url(../img/banner/card-1.webp);
+      background-image: url(../img/service/bez-nal.webp);
 
       @include mobile {
         grid-column: 1/span 2;
@@ -45,7 +45,7 @@
     }
 
     &:last-child {
-      background-image: url(../img/banner/img-9.webp);
+      background-image: url(../img/service/222.webp);
       grid-column: 1/span 2;
 
     }
