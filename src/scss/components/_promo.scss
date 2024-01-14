@@ -12,6 +12,11 @@
 
   &__wrapp {
     display: flex;
+    max-height: 700px;
+
+    @include big-desktop {
+      max-height: none;
+    }
   }
 
   &__left {
@@ -37,8 +42,7 @@
   }
 
   &__right {
-    margin-left: -10px;
-    width: calc(60% + 10px);
+    width: 60%;
 
     @include small-tablet {
       display: none;
