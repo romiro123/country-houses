@@ -862,6 +862,12 @@ ul {
     margin-right: auto;
   }
 }
+.hero__next {
+  color: var(--primary);
+}
+.hero__prev {
+  color: var(--primary);
+}
 
 .works {
   margin-bottom: 100px;
@@ -1088,6 +1094,10 @@ ul {
     margin-bottom: 50px;
   }
 }
+.gallery__swiper {
+  padding: 0 30px;
+  margin-bottom: 50px;
+}
 .gallery__slide {
   position: relative;
   height: 450px;
@@ -1210,11 +1220,6 @@ ul {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.swiper--gallery {
-  overflow: visible;
-  margin-bottom: 50px;
 }
 
 .service {

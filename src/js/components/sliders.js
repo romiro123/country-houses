@@ -4,18 +4,18 @@ Swiper.use([Navigation, Pagination, Autoplay, Grid, EffectCoverflow, EffectCreat
 const swiperHero = new Swiper('.swiper--hero', {
   slidesPerView: 1,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.hero__next',
+    prevEl: '.hero__prev',
   },
-  pagination: {
-    el: ".swiper-pagination--bottom",
-    type: "progressbar",
-  },
+  // pagination: {
+  //   el: ".swiper-pagination--bottom",
+  //   type: "progressbar",
+  // },
   // speed: 3000,
   // autoplay: {
   //   delay: 5000,
   // },
-  // loop: true,
+  loop: true,
 });
 
 const swiperWorks = new Swiper('.swiper--works', {
@@ -59,8 +59,8 @@ const swiperWorks = new Swiper('.swiper--works', {
 });
 
 const swiperGallery = new Swiper('.swiper--gallery', {
-  centeredSlides: true,
-  loop: true,
+  // centeredSlides: true,
+  //loop: true,
   breakpoints: {
     320: {
       slidesPerView: 1.4,

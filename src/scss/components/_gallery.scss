@@ -7,6 +7,11 @@
     margin-bottom: 50px;
   }
 
+  &__swiper {
+    padding: 0 30px;
+    margin-bottom: 50px;
+  }
+
   &__slide {
     position: relative;
     height: 450px;
@@ -107,9 +112,4 @@
     display: flex;
     flex-direction: column;
   }
-}
-
-.swiper--gallery {
-  overflow: visible;
-  margin-bottom: 50px;
 }

@@ -90,10 +90,6 @@ console.log((0,_functions_mobile_check__WEBPACK_IMPORTED_MODULE_0__.mobileCheck)
 // import GraphModal from 'graph-modal';
 // const modal = new GraphModal();
 
-// Реализация табов
-// import GraphTabs from 'graph-tabs';
-// const tabs = new GraphTabs('tab');
-
 // Получение высоты шапки сайта (не забудьте вызвать функцию)
 //import { getHeaderHeight } from './functions/header-height';
 
@@ -346,18 +342,18 @@ swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MOD
 const swiperHero = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper--hero', {
   slidesPerView: 1,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
+    nextEl: '.hero__next',
+    prevEl: '.hero__prev'
   },
-  pagination: {
-    el: ".swiper-pagination--bottom",
-    type: "progressbar"
-  }
+  // pagination: {
+  //   el: ".swiper-pagination--bottom",
+  //   type: "progressbar",
+  // },
   // speed: 3000,
   // autoplay: {
   //   delay: 5000,
   // },
-  // loop: true,
+  loop: true
 });
 const swiperWorks = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper--works', {
   slidesPerView: 1,
@@ -399,8 +395,8 @@ const swiperWorks = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper-
   }
 });
 const swiperGallery = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper--gallery', {
-  centeredSlides: true,
-  loop: true,
+  // centeredSlides: true,
+  //loop: true,
   breakpoints: {
     320: {
       slidesPerView: 1.4,
