@@ -7,6 +7,18 @@
 
   &__container {
     width: 100%;
+
+    @include big-desktop {
+      padding: 0 50px;
+    }
+
+    @include tablet {
+      padding: 0 25px;
+    }
+
+    @include small-tablet {
+      padding: 0 var(--container-offset);
+    }
   }
 
   &__content {
@@ -29,7 +41,7 @@
   &__swiper {
     height: 900px;
 
-    @include mobile {
+    @include big-desktop {
       height: 700px;
     }
   }
@@ -87,12 +99,10 @@
     }
   }
 
-  &__next {
-    color: var(--primary);
-  }
-
-  &__prev {
-    color: var(--primary);
+  &__pagination {
+    & .swiper-pagination-bullet-active {
+      background: var(--primary);
+    }
   }
 
 }

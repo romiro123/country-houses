@@ -786,6 +786,21 @@ ul {
 .hero__container {
   width: 100%;
 }
+@media (max-width: 1440px) {
+  .hero__container {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 1024px) {
+  .hero__container {
+    padding: 0 25px;
+  }
+}
+@media (max-width: 768px) {
+  .hero__container {
+    padding: 0 var(--container-offset);
+  }
+}
 .hero__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -809,7 +824,7 @@ ul {
 .hero__swiper {
   height: 900px;
 }
-@media (max-width: 576px) {
+@media (max-width: 1440px) {
   .hero__swiper {
     height: 700px;
   }
@@ -862,11 +877,8 @@ ul {
     margin-right: auto;
   }
 }
-.hero__next {
-  color: var(--primary);
-}
-.hero__prev {
-  color: var(--primary);
+.hero__pagination .swiper-pagination-bullet-active {
+  background: var(--primary);
 }
 
 .works {
@@ -979,6 +991,116 @@ ul {
   .about {
     margin-bottom: 50px;
   }
+}
+
+.accordion--features {
+  max-width: 900px;
+  margin: 25px 0 25px auto;
+}
+.accordion .ac {
+  margin-top: 0;
+  border: none;
+  border-bottom: 1px solid #eee;
+  background-color: transparent;
+}
+.accordion .ac__header {
+  margin: 0;
+  padding: 0;
+}
+.accordion .ac__title {
+  color: var(--secondary);
+  text-align: left;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.accordion .ac__trigger {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  background-color: transparent;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border: none;
+  padding: 20px 10px;
+}
+@media (max-width: 576px) {
+  .accordion .ac__trigger {
+    padding: 20px 0px;
+  }
+}
+.accordion .ac__trigger svg {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  background-color: var(--secondary);
+  border: 2px solid var(--secondary);
+  border-radius: 100%;
+  fill: none;
+  stroke: var(--light);
+  stroke-linecap: round;
+  stroke-width: 2px;
+  rotate: 90deg;
+  -webkit-transition: background-color 0.2s ease-in-out, rotate 0.2s ease-in-out, border 0.2s ease-in-out, stroke 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, rotate 0.2s ease-in-out, border 0.2s ease-in-out, stroke 0.2s ease-in-out;
+}
+.accordion .ac__trigger:hover {
+  background-color: var(--secondary);
+  border-radius: 5px;
+}
+.accordion .ac__trigger:hover .ac__title {
+  color: var(--light);
+}
+.accordion .ac__trigger:hover svg {
+  border: 2px solid var(--light);
+  stroke: var(--light);
+}
+.accordion .ac__trigger:focus {
+  outline: none;
+}
+.accordion .ac__trigger:focus-visible svg {
+  border: 2px solid var(--dark);
+  stroke: var(--dark);
+  background-color: var(--accent);
+}
+.accordion .ac__panel {
+  overflow: hidden;
+  -webkit-transition-property: height, visibility;
+  transition-property: height, visibility;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+.accordion .ac__text {
+  padding: 15px 35px 15px 10px;
+}
+@media (max-width: 576px) {
+  .accordion .ac__text {
+    padding: 5px 15px;
+  }
+}
+.accordion .is-active .ac__trigger {
+  background-color: var(--secondary);
+  border-radius: 5px;
+}
+.accordion .is-active .ac__trigger svg {
+  rotate: -90deg;
+  border: 2px solid var(--light);
+  stroke: var(--light);
+}
+.accordion .is-active .ac__title {
+  color: var(--light);
+}
+.accordion .is-active .ac__panel {
+  visibility: visible;
 }
 
 .promo {

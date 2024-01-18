@@ -1,38 +1,29 @@
-import Swiper, { Navigation, Pagination, Autoplay, Grid, EffectCoverflow, EffectCreative } from 'swiper';
-Swiper.use([Navigation, Pagination, Autoplay, Grid, EffectCoverflow, EffectCreative]);
+import Swiper, { Navigation, Pagination, Autoplay, EffectCoverflow, EffectCreative } from 'swiper';
+Swiper.use([Navigation, Pagination, Autoplay, EffectCoverflow, EffectCreative]);
 
 const swiperHero = new Swiper('.swiper--hero', {
   slidesPerView: 1,
-  navigation: {
-    nextEl: '.hero__next',
-    prevEl: '.hero__prev',
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
   },
-  // pagination: {
-  //   el: ".swiper-pagination--bottom",
-  //   type: "progressbar",
-  // },
-  // speed: 3000,
-  // autoplay: {
-  //   delay: 5000,
-  // },
+  speed: 500,
+  autoplay: {
+    delay: 3000,
+  },
   loop: true,
 });
 
 const swiperWorks = new Swiper('.swiper--works', {
   slidesPerView: 1,
-  // navigation: {
-  //   nextEl: '.swiper-button-next',
-  //   prevEl: '.swiper-button-prev',
-  // },
   pagination: {
     el: ".swiper-pagination",
     dynamicBullets: true,
   },
-  // centeredSlides: true,
-  // speed: 3000,
-  // autoplay: {
-  //   delay: 5000,
-  // },
+  speed: 700,
+  autoplay: {
+    delay: 3500,
+  },
   loop: true,
   breakpoints: {
     320: {
@@ -61,6 +52,10 @@ const swiperWorks = new Swiper('.swiper--works', {
 const swiperGallery = new Swiper('.swiper--gallery', {
   // centeredSlides: true,
   //loop: true,
+  speed: 700,
+  autoplay: {
+    delay: 3500,
+  },
   breakpoints: {
     320: {
       slidesPerView: 1.4,
