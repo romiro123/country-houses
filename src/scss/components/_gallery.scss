@@ -65,11 +65,14 @@
     left: 50px;
     visibility: hidden;
     opacity: 0;
-    background-color: var(--light);
-    padding: 20px 25px;
+    background-color: var(--secondary);
+    color: var(--light);
     transform: translateX(100px);
     transition: all 300ms linear 0ms;
     border-radius: 5px;
+    line-height: 18px;
+    font-weight: 600;
+    padding: 15px 20px;
 
     @include tablet {
       top: 25px;
@@ -80,6 +83,7 @@
     }
 
     @include small-tablet {
+      font-weight: 400;
       padding: 10px 15px;
     }
 

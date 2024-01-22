@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="fav.svg" type="image/x-icon">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#111111">
-  <title>MaxGraph New Site</title>
+  <title>Территория Комфорта</title>
   <link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
@@ -27,7 +27,7 @@
       </svg>
     </a>
 
-    <nav class="nav menu " title="" data-menu>
+    <nav class="nav menu " title="Навигация" data-menu>
       <h2 class="menu__title title title--section">Меню</h2>
       <ul class="nav__list">
         <li class="nav__item">
@@ -45,7 +45,7 @@
       </ul>
 
       <div class="header__social-mobile">
-        <ul class="social" title="">
+        <ul class="social" title="Социальные сети">
           <li class="social__item">
             <a href="#" target="_blank" class="social__link" aria-label="Наша страничка в Фейсбуке">
               <svg class="social__icon">
@@ -62,7 +62,7 @@
       </div>
 
       <div class="header__phone-mobile">
-        <a href="#" target="_blank" class="big-phone" aria-label="Наша кте">
+        <a href="tel:+79001111111" class="big-phone" aria-label="Наш телефон">
           <svg class="big-phone__icon">
             <use xlink:href="img/sprite.svg#phone-def"></use>
           </svg>
@@ -71,7 +71,7 @@
       </div>
     </nav>
 
-    <ul class="header__social social" title="">
+    <ul class="header__social social" title="Социальные сети">
       <li class="social__item">
         <a href="#" target="_blank" class="social__link" aria-label="Наша страничка в Фейсбуке">
           <svg class="social__icon">
@@ -86,7 +86,7 @@
       </li>
     </ul>
 
-    <a href="#" target="_blank" class="header__phone big-phone" aria-label="Наша кте">
+    <a href="tel:+79001111111" class="header__phone big-phone" aria-label="Наш телефон">
       <svg class="big-phone__icon">
         <use xlink:href="img/sprite.svg#phone-def"></use>
       </svg>
@@ -104,11 +104,8 @@
 </header>
     <main class="main">
       <section class="hero">
-
   <div class="hero__swiper swiper swiper--hero">
-
     <div class="swiper-wrapper">
-
       <div class="hero__slide swiper-slide">
         <picture>
           <source srcset="img/banner/banner-1-576.webp" type="image/webp" media="(max-width: 576px)">
@@ -116,8 +113,7 @@
           <source srcset="img/banner/banner-1-1440.webp" type="image/webp" media="(max-width: 1440px)">
           <img loading="lazy" src="img/banner/banner-1-1920.webp" class="hero__img img" height="700" alt="">
         </picture>
-
-        <div class="hero__content ">
+        <div class="hero__content">
           <div class="hero__container container">
             <div class="hero__wrapp">
               <p class="hero__subtitle subtitle">Our Group is recognized as one of the World</p>
@@ -146,7 +142,6 @@
           <source srcset="img/banner/banner-3-1440.webp" type="image/webp" media="(max-width: 1440px)">
           <img loading="lazy" src="img/banner/banner-3-1920.webp" class="hero__img img" height="700" alt="">
         </picture>
-
         <div class="hero__content ">
           <div class="hero__container container">
             <div class="hero__wrapp">
@@ -172,15 +167,13 @@
     <!-- <div class="hero__next swiper-button-next"></div>
     <div class="hero__prev swiper-button-prev"></div> -->
     <div class="hero__pagination swiper-pagination"></div>
-
   </div>
-
 </section>
       <section class="works" id="works">
   <div class="container">
-    <h2 class="works__title title title--section">Наши работы</h2>
+    <h2 class="works__title title title--section" data-aos="fade-right">Наши работы</h2>
   </div>
-  <div class="swiper swiper--works">
+  <div class="swiper swiper--works" data-aos="fade-left">
     <div class="works__list swiper-wrapper">
       <div class="works__item swiper-slide">
         <article class="works__card card">
@@ -191,7 +184,7 @@
             <img loading="lazy" src="img/work/work-1.webp" class="card__img img" height="300" alt="">
           </picture>
           <div class="card__content">
-            <h3 class="card__title">Дом «Уют 1» в п. Лесная поляна</h3>
+            <h3 class="card__title">Дом «Уют 1» в п. Старые Ерыклы</h3>
             <span class="card__i">105 м<sup>2</sup></span>
             <p class="card__desc content content--small">Дом из газобетона, фундамент — свайно-ростверковый, облицовка —
               кирпич. Панорамные окна в пол с выходом на просторную
@@ -218,7 +211,7 @@
                 <p>Санузлов: <b>1</b></p>
               </li>
             </ul>  -->
-            <button class="card__btn btn btn--g-b">Подробнее</button>
+            <button class="card__btn btn btn--g-b" data-graph-path="modal">Подробнее</button>
           </div>
         </article>
       </div>
@@ -232,7 +225,7 @@
             <img loading="lazy" src="img/work/work-2.webp" class="card__img img" height="300" alt="">
           </picture>
           <div class="card__content">
-            <h3 class="card__title">Дом «Уют 2» в п. Лесная поляна</h3>
+            <h3 class="card__title">Дом «Уют 2» в п. Азьмушкино</h3>
             <span class="card__i">100 м<sup>2</sup></span>
             <p class="card__desc content content--small">
               Дом из газобетона, фундамент — свайно-ростверковый, облицовка — фасадная штукратурка. Общая площадь 105
@@ -240,7 +233,7 @@
               всему дому, предчиствовая отделка White Box. В доме по проекту 3 спальни, кухня совмещена с гостиной,
               гардеробная, котельная и ванная комната.
             </p>
-            <button class="card__btn btn btn--g-b">Подробнее</button>
+            <button class="card__btn btn btn--g-b" data-graph-path="modal">Подробнее</button>
           </div>
         </article>
       </div>
@@ -254,7 +247,7 @@
             <img loading="lazy" src="img/work/work-3.webp" class="card__img img" height="300" alt="">
           </picture>
           <div class="card__content">
-            <h3 class="card__title">Дом «140» в п. Карныш</h3>
+            <h3 class="card__title">Дом «140» в п. Южный</h3>
             <span class="card__i">140 м<sup>2</sup></span>
             <p class="card__desc content content--small">
               Дом из газобетона, фундамент — свайно-ростверковый, облицовка -кирпич. Общая площадь 140 м<sup>2</sup>. по
@@ -262,7 +255,7 @@
               предчистовая отделка White Box. В доме по проекту 5 спален, кухня совмещена с гостиной, гардеробная,
               котельная, ванная комната и санузлы.
             </p>
-            <button class="card__btn btn btn--g-b">Подробнее</button>
+            <button class="card__btn btn btn--g-b" data-graph-path="modal">Подробнее</button>
           </div>
         </article>
       </div>
@@ -276,7 +269,7 @@
             <img loading="lazy" src="img/work/work-4.webp" class="card__img img" height="300" alt="">
           </picture>
           <div class="card__content">
-            <h3 class="card__title">Дом «150» в п. Лесная поляна</h3>
+            <h3 class="card__title">Дом «150» в п. Ильбухтино</h3>
             <span class="card__i">150 м<sup>2</sup></span>
             <p class="card__desc content content--small">
               Дом из газобетона, фундамент — свайно-ростверковый, облицовка -кирпич. Общая площадь 150 м<sup>2</sup> по
@@ -284,7 +277,7 @@
               предчистовая отделка White Box. В доме по проекту 5 спален, кухня совмещена с гостиной, гардеробная,
               котельная, ванная комната и санузлы.
             </p>
-            <button class="card__btn btn btn--g-b">Подробнее</button>
+            <button class="card__btn btn btn--g-b" data-graph-path="modal">Подробнее</button>
           </div>
         </article>
       </div>
@@ -298,7 +291,7 @@
             <img loading="lazy" src="img/work/work-5.webp" class="card__img img" height="300" alt="">
           </picture>
           <div class="card__content">
-            <h3 class="card__title">Дом «110» в п. Лесная поляна</h3>
+            <h3 class="card__title">Дом «110» в п. Азьмушкино</h3>
             <span class="card__i">110 м<sup>2</sup></span>
             <p class="card__desc content content--small">
               Общая площадь 110 м<sup>2</sup> по
@@ -306,7 +299,7 @@
               проекту 3 спален, кухня совмещена с гостиной, гардеробная,
               котельная, ванная комната и санузел.
             </p>
-            <button class="card__btn btn btn--g-b">Подробнее</button>
+            <button class="card__btn btn btn--g-b" data-graph-path="modal">Подробнее</button>
           </div>
         </article>
       </div>
@@ -320,7 +313,7 @@
             <img loading="lazy" src="img/work/work-6.webp" class="card__img img" height="300" alt="">
           </picture>
           <div class="card__content">
-            <h3 class="card__title">Дом «170» в п. Лесная поляна</h3>
+            <h3 class="card__title">Дом «170» в п. Старые Ерыклы</h3>
             <span class="card__i">170 м<sup>2</sup></span>
             <p class="card__desc content content--small">
               Общая площадь 170 м<sup>2</sup> по
@@ -328,7 +321,7 @@
               проекту 3 спален, кухня-столовая, гостинная, кладовая, гардеробная, веранда, котельная, ванная комната и
               санузел.
             </p>
-            <button class="card__btn btn btn--g-b">Подробнее</button>
+            <button class="card__btn btn btn--g-b" data-graph-path="modal">Подробнее</button>
           </div>
         </article>
       </div>
@@ -342,14 +335,14 @@
             <img loading="lazy" src="img/work/work-7.webp" class="card__img img" height="300" alt="">
           </picture>
           <div class="card__content">
-            <h3 class="card__title">Дом «К75» в п. Лесная поляна</h3>
+            <h3 class="card__title">Дом «К75» в п. Старые Ерыклы</h3>
             <span class="card__i">75 м<sup>2</sup></span>
             <p class="card__desc content content--small">
               Общая площадь 75 м<sup>2</sup> по
               внутренним стенам. В доме по
               проекту 2 спальни, кухня, гостинная и санузел.
             </p>
-            <button class="card__btn btn btn--g-b">Подробнее</button>
+            <button class="card__btn btn btn--g-b" data-graph-path="modal">Подробнее</button>
           </div>
         </article>
       </div>
@@ -363,13 +356,13 @@
             <img loading="lazy" src="img/work/work-8.webp" class="card__img img" height="300" alt="">
           </picture>
           <div class="card__content">
-            <h3 class="card__title">Дом «К107» в п. Лесная поляна</h3>
+            <h3 class="card__title">Дом «К107» в п. Старые Ерыклы</h3>
             <span class="card__i">120 м<sup>2</sup></span>
             <p class="card__desc content content--small">
               Дом из керамического кирпича, облицовка — керамический кирпич. В доме по проекту 3 спальни, кухня
               совмещена с гостиной, гардеробная, терасса, котельная и ванная комната.
             </p>
-            <button class="card__btn btn btn--g-b">Подробнее</button>
+            <button class="card__btn btn btn--g-b" data-graph-path="modal">Подробнее</button>
           </div>
         </article>
       </div>
@@ -380,129 +373,144 @@
 </section>
       <section class="about" id="about">
   <div class="container">
-    <h2 class="title title--section">О нас</h2>
+    <h1 class="visually-hidden">
+      Территория Комфорта — продажа и строительство готовых домов
+    </h1>
+    <h2 class="title title--section" data-aos="fade-right" data-aos-delay="150">О нас</h2>
 
-    <p>«Территория Комфорта» — это компания, которая с гордостью занимается строительством качественных загородных домов
+    <p data-aos="fade-left" data-aos-delay="200"><strong>«Территория Комфорта»</strong> — это компания, которая с
+      гордостью занимается
+      строительством качественных
+      загородных домов
       из кирпича и монолитных конструкций в городах Набережные Челны, Нижнекамск и Елабуга.</p>
 
-    <div class="accordion accordion--features">
-      <div class="ac">
-        <div class="ac__header">
-          <button type="button" class="ac__trigger">
-            <h3 class="ac__title title title--medium">Профессионализм и Доверие</h3>
-            <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.625 7.5625L13.0625 11L9.625 14.4375" stroke-linejoin="round"></path>
-            </svg>
-          </button>
+    <div class="about__wrapp" data-aos="fade-up" data-aos-delay="300">
 
+      <div class="accordion accordion--features">
+        <div class="ac">
+          <div class="ac__header">
+            <button type="button" class="ac__trigger">
+              <h3 class="ac__title title title--medium">Профессионализм и Доверие</h3>
+              <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.625 7.5625L13.0625 11L9.625 14.4375" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+
+          </div>
+          <div class="ac__panel">
+            <p class="ac__text">
+              С момента своего основания «Территория Комфорта» заслужила репутацию надежного и профессионального
+              застройщика.
+              Компания гордится своими квалифицированными специалистами, которые обладают богатым опытом в области
+              строительства
+              и проектирования. Каждый дом, возведенный «Территорией Комфорта», отличается высочайшим уровнем качества и
+              безупречной отделкой.
+            </p>
+          </div>
         </div>
-        <div class="ac__panel">
-          <p class="ac__text">
-            С момента своего основания «Территория Комфорта» заслужила репутацию надежного и профессионального
-            застройщика.
-            Компания гордится своими квалифицированными специалистами, которые обладают богатым опытом в области
-            строительства
-            и проектирования. Каждый дом, возведенный «Территорией Комфорта», отличается высочайшим уровнем качества и
-            безупречной отделкой.
-          </p>
+
+        <div class="ac">
+          <div class="ac__header">
+            <button type="button" class="ac__trigger">
+              <h3 class="ac__title title title--medium">Региональная Адаптация</h3>
+              <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.625 7.5625L13.0625 11L9.625 14.4375" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="ac__panel">
+            <p class="ac__text">
+              «Территория Комфорта» прекрасно понимает, что каждый регион имеет свои особенности и требования. Поэтому,
+              строя
+              загородные дома в Набережных Челнах, Нижнекамске и Елабуге, компания учитывает местный климат,
+              архитектурные
+              особенности и предпочтения жителей, создавая дома, которые идеально вписываются в окружающую среду.
+            </p>
+          </div>
+        </div>
+
+        <div class="ac">
+          <div class="ac__header">
+            <button type="button" class="ac__trigger">
+              <h3 class="ac__title title title--medium">Мы следим за качеством</h3>
+              <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.625 7.5625L13.0625 11L9.625 14.4375" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="ac__panel">
+            <p class="ac__text">Все наши проекты, в ходе реализации, проходят через поэтапный технический контроль
+              качества
+              написанного кода. Мы придерживаемся самых последних стандартов и технологий разработки сайтов и
+              веб-приложений.</p>
+          </div>
+        </div>
+
+        <div class="ac">
+          <div class="ac__header">
+            <button type="button" class="ac__trigger">
+              <h3 class="ac__title title title--medium">Индивидуальный Подход</h3>
+              <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.625 7.5625L13.0625 11L9.625 14.4375" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="ac__panel">
+            <p class="ac__text">
+              «Территория Комфорта» стремится к тому, чтобы каждый клиент получил дом своей мечты. Компания предлагает
+              индивидуальный подход к проектированию и строительству, позволяя заказчикам воплотить в жизнь самые смелые
+              идеи и
+              предпочтения, создавая дома, отражающие личность и вкус каждой семьи.
+            </p>
+          </div>
+        </div>
+
+        <div class="ac">
+          <div class="ac__header">
+            <button type="button" class="ac__trigger">
+              <h3 class="ac__title title title--medium">Безопасность и Надежность</h3>
+              <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.625 7.5625L13.0625 11L9.625 14.4375" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="ac__panel">
+            <p class="ac__text">
+              При возведении домов «Территория Комфорта» придает особое внимание безопасности и надежности конструкций.
+              Используются только сертифицированные материалы, а строительные технологии соответствуют высочайшим
+              стандартам,
+              обеспечивая долговечность и устойчивость в течение многих лет.
+            </p>
+          </div>
+        </div>
+
+        <div class="ac">
+          <div class="ac__header">
+            <button type="button" class="ac__trigger">
+              <h3 class="ac__title title title--medium">Экологическая Ориентированность</h3>
+              <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.625 7.5625L13.0625 11L9.625 14.4375" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </div>
+          <div class="ac__panel">
+            <p class="ac__text">
+              Компания разделяет важность экологически чистого строительства. При выборе материалов и технологий
+              «Территория
+              Комфорта» придерживается принципов устойчивого развития, создавая дома, которые обеспечивают комфортное
+              проживание, не вредя окружающей среде.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class="ac">
-        <div class="ac__header">
-          <button type="button" class="ac__trigger">
-            <h3 class="ac__title title title--medium">Региональная Адаптация</h3>
-            <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.625 7.5625L13.0625 11L9.625 14.4375" stroke-linejoin="round"></path>
-            </svg>
-          </button>
-        </div>
-        <div class="ac__panel">
-          <p class="ac__text">
-            «Территория Комфорта» прекрасно понимает, что каждый регион имеет свои особенности и требования. Поэтому,
-            строя
-            загородные дома в Набережных Челнах, Нижнекамске и Елабуге, компания учитывает местный климат, архитектурные
-            особенности и предпочтения жителей, создавая дома, которые идеально вписываются в окружающую среду.
-          </p>
-        </div>
-      </div>
-
-      <div class="ac">
-        <div class="ac__header">
-          <button type="button" class="ac__trigger">
-            <h3 class="ac__title title title--medium">Мы следим за качеством</h3>
-            <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.625 7.5625L13.0625 11L9.625 14.4375" stroke-linejoin="round"></path>
-            </svg>
-          </button>
-        </div>
-        <div class="ac__panel">
-          <p class="ac__text">Все наши проекты, в ходе реализации, проходят через поэтапный технический контроль
-            качества
-            написанного кода. Мы придерживаемся самых последних стандартов и технологий разработки сайтов и
-            веб-приложений.</p>
-        </div>
-      </div>
-
-      <div class="ac">
-        <div class="ac__header">
-          <button type="button" class="ac__trigger">
-            <h3 class="ac__title title title--medium">Индивидуальный Подход</h3>
-            <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.625 7.5625L13.0625 11L9.625 14.4375" stroke-linejoin="round"></path>
-            </svg>
-          </button>
-        </div>
-        <div class="ac__panel">
-          <p class="ac__text">
-            «Территория Комфорта» стремится к тому, чтобы каждый клиент получил дом своей мечты. Компания предлагает
-            индивидуальный подход к проектированию и строительству, позволяя заказчикам воплотить в жизнь самые смелые
-            идеи и
-            предпочтения, создавая дома, отражающие личность и вкус каждой семьи.
-          </p>
-        </div>
-      </div>
-
-      <div class="ac">
-        <div class="ac__header">
-          <button type="button" class="ac__trigger">
-            <h3 class="ac__title title title--medium">Безопасность и Надежность</h3>
-            <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.625 7.5625L13.0625 11L9.625 14.4375" stroke-linejoin="round"></path>
-            </svg>
-          </button>
-        </div>
-        <div class="ac__panel">
-          <p class="ac__text">
-            При возведении домов «Территория Комфорта» придает особое внимание безопасности и надежности конструкций.
-            Используются только сертифицированные материалы, а строительные технологии соответствуют высочайшим
-            стандартам,
-            обеспечивая долговечность и устойчивость в течение многих лет.
-          </p>
-        </div>
-      </div>
-
-      <div class="ac">
-        <div class="ac__header">
-          <button type="button" class="ac__trigger">
-            <h3 class="ac__title title title--medium">Экологическая Ориентированность</h3>
-            <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9.625 7.5625L13.0625 11L9.625 14.4375" stroke-linejoin="round"></path>
-            </svg>
-          </button>
-        </div>
-        <div class="ac__panel">
-          <p class="ac__text">
-            Компания разделяет важность экологически чистого строительства. При выборе материалов и технологий
-            «Территория
-            Комфорта» придерживается принципов устойчивого развития, создавая дома, которые обеспечивают комфортное
-            проживание, не вредя окружающей среде.
-          </p>
-        </div>
-      </div>
+      <img class="about__img img" src="img/logo-full-page.svg" alt="Территория Комфорта" width="150" height="150">
     </div>
 
-    <p>«Территория Комфорта» не просто строит дома, она создает жизненные пространства, наполненные комфортом, качеством
+    <p data-aos="fade-left"> <strong>«Территория Комфорта»</strong> не просто строит дома, она
+      создает жизненные
+      пространства, наполненные
+      комфортом, качеством
       и красотой, где жители могут наслаждаться жизнью и создавать уютные моменты в кругу своих близких.</p>
 
   </div>
@@ -510,20 +518,19 @@
       <section class="promo">
   <div class="promo__wrapp">
     <div class="promo__left">
-      <h2 class="promo__title title title--section">
-        Подберем участок для вашего будующего дома
+      <h2 class="promo__title title title--section" data-aos="fade-right" data-aos-delay="50">
+        Подберем участок под строительство вашего будующего дома
       </h2>
-
-      <p class="promo__subtitle subtitle">Мы поможем вам подобрать идеальный участок под строительство вашего будущего
+      <p class="promo__subtitle subtitle" data-aos="fade-right" data-aos-delay="150">Мы поможем
+        вам подобрать идеальный участок под строительство вашего будущего
         дома, учитывая предпочтения по местоположению, окружающей инфраструктуре и особенностям планируемого проекта.
       </p>
-
-      <p class="promo__subtitle subtitle">Наши специалисты готовы предложить вам наиболее подходящие варианты участков,
+      <p class="promo__subtitle subtitle" data-aos="fade-right" data-aos-delay="200">Наши
+        специалисты готовы предложить вам наиболее подходящие варианты участков,
         учитывая все ваши пожелания и критерии, чтобы обеспечить идеальное сочетание между местоположением участка и
         ожиданиями от будущего дома.
       </p>
-
-      <button class="promo__btn btn btn--w-b">
+      <button class="promo__btn btn btn--w-b" data-graph-path="modal" data-aos="fade-right" data-aos-delay="250">
         <span class="promo__btn-desk">Рассмотреть предложения</span>
         <span class="promo__btn-mob">Ознакомиться</span>
         <svg class="arrow-btn">
@@ -532,12 +539,12 @@
       </button>
 
     </div>
-    <div class="promo__right">
+    <div class="promo__right" data-aos="fade-left">
       <picture>
-        <!-- <source srcset="img/hero/slide-1-576.webp" type="image/webp" media="(max-width: 576px)">
-        <source srcset="img/hero/slide-1-1024.webp" type="image/webp" media="(max-width: 1439px)">
-        <source srcset="img/hero/slide-1-1440.webp" type="image/webp" media="(max-width: 1919px)"> -->
-        <img loading="lazy" src="img/img-plan.webp" class="promo__img img" height="500" alt="">
+        <source srcset="img/service/podbor1-1024.webp" type="image/webp" media="(max-width: 1024px)">
+        <source srcset="img/service/podbor1-1440.webp" type="image/webp" media="(max-width: 1439px)">
+        <img loading="lazy" src="img/service/podbor1.webp" class="promo__img img" height="500"
+          alt="Участок под строительство дома">
       </picture>
     </div>
   </div>
@@ -546,7 +553,7 @@
   <div class="container">
 
     <ul class="service__list">
-      <li class="service__item a">
+      <li class="service__item a" data-aos="fade-right" data-aos-delay="250">
         <h2 class="service__title title title--section">Наши услуги</h2>
       </li>
       <li class="service__item b">
@@ -561,7 +568,7 @@
       </li>
       <li class="service__item d">
         <article class="service__desc">
-          <h3 class="service__name title title--small">Подбор участка</h3>
+          <h3 class="service__name title title--small">Подбор участка под строительство дома</h3>
         </article>
       </li>
       <li class="service__item e">
@@ -581,7 +588,7 @@
       </li>
     </ul>
 
-    <div class="service__bottom">
+    <div class="service__bottom" data-aos="fade-up">
       <div class="service__content">
         <h3 class="service__subtitle title title--medium">Форма обратного звонка</h3>
         <p>Остались вопросы? Заполните форму обратного звонка и наши специалисты свяжутся с Вами!</p>
@@ -606,14 +613,14 @@
 </section>
       <section class="gallery" id="gallery">
   <div class="container">
-    <h2 class="title title--section">Наши проекты</h2>
+    <h2 class="title title--section" data-aos="fade-right" data-aos-delay="250">Наши проекты</h2>
   </div>
 
   <div class="gallery__swiper swiper swiper--gallery">
     <div class="swiper-wrapper ">
       <div class="gallery__slide swiper-slide">
         <a data-fancybox="gallery-M98" class="gallery__card" href="img/gallery/М98/М98-01.webp" data-caption="">
-          <img class="gallery__img" src="img/gallery/М98/М98-humbs.webp" alt="М98">
+          <img class="gallery__img" src="img/gallery/М98/М98-humbs.webp" alt="Проект готового дома М98 под ключ">
           <span class="gallery__description">М98</span>
         </a>
         <div style="display:none">
@@ -626,7 +633,7 @@
 
       <div class="gallery__slide swiper-slide">
         <a data-fancybox="gallery-m98-2" class="gallery__card" href="img/gallery/m98-2/m98-2-01.webp" data-caption="">
-          <img class="gallery__img" src="img/gallery/M98-2/M98-2-humbs.webp" alt="М98-2">
+          <img class="gallery__img" src="img/gallery/m98-2/m98-2-humbs.webp" alt="Проект готового дома М98-2 под ключ">
           <span class="gallery__description">М98-2</span>
         </a>
         <div style="display:none">
@@ -639,7 +646,7 @@
 
       <div class="gallery__slide swiper-slide">
         <a data-fancybox="gallery-K107" class="gallery__card" href="img/gallery/K107/K107-1.webp" data-caption="">
-          <img class="gallery__img" src="img/gallery/K107/K107-humbs.webp" alt="K107">
+          <img class="gallery__img" src="img/gallery/K107/K107-humbs.webp" alt="Проект готового дома K107 под ключ">
           <span class="gallery__description">K107</span>
         </a>
         <div style="display:none">
@@ -653,7 +660,7 @@
 
       <div class="gallery__slide swiper-slide">
         <a data-fancybox="gallery-K150" class="gallery__card" href="img/gallery/K150/K150-1.webp" data-caption="">
-          <img class="gallery__img" src="img/gallery/K150/K150-humbs.webp" alt="K150">
+          <img class="gallery__img" src="img/gallery/K150/K150-humbs.webp" alt="Проект готового дома K150 под ключ">
           <span class="gallery__description">K150</span>
         </a>
         <div style="display:none">
@@ -669,7 +676,7 @@
 
       <div class="gallery__slide swiper-slide">
         <a data-fancybox="gallery-K140" class="gallery__card" href="img/gallery/K140/K140-1.webp" data-caption="">
-          <img class="gallery__img" src="img/gallery/K140/K140-humbs.webp" alt="K140">
+          <img class="gallery__img" src="img/gallery/K140/K140-humbs.webp" alt="Проект готового дома K140 под ключ">
           <span class="gallery__description">K140</span>
         </a>
         <div style="display:none">
@@ -686,13 +693,13 @@
   </div>
   <div class="container">
     <div class="gallery__bottom">
-      <div class="gallery__content">
+      <div class="gallery__content" data-aos="fade-up" data-aos-delay="150">
         <h3 class="gallery__subtitle title title--medium">Не нашли нужный проект?</h3>
         <p>Заполните форму обратного звонка и наши специалисты свяжутся с Вами и подберут проект
           индивидуально!</p>
       </div>
 
-      <form action="#" class="gallery__form form form--gallery">
+      <form action="#" class="gallery__form form form--gallery" data-aos="fade-up" data-aos-delay="250">
         <label class="form__label">
           <input type="text" name="name" class="input-reset form__input input-name" placeholder="Имя">
         </label>
@@ -712,11 +719,11 @@
       <section class="stage">
   <div class="stage__grid">
     <div class="stage__desc">
-      <h2 class="stage__title title title--section">Этапы строительства вашего дома</h2>
-      <ul class="stage__pagination swiper-pagination"></ul>
+      <h2 class="stage__title title title--section" data-aos="fade-right">Этапы строительства вашего дома</h2>
+      <ul class="stage__pagination swiper-pagination" data-aos="fade-up" data-aos-delay="150"></ul>
     </div>
 
-    <div class="stage__swiper swiper swiper--stage">
+    <div class="stage__swiper swiper swiper--stage" data-aos="fade-left" data-aos-delay="350">
       <div class="swiper-wrapper">
         <div class="stage__slide swiper-slide">
           <div class="stage__content">
@@ -796,21 +803,22 @@
 </section>
       <section class="pay">
   <div class="container">
-    <h2 class="pay__title title title--section">Способы оплаты</h2>
+    <h2 class="pay__title title title--section" data-aos="fade-right">Способы оплаты</h2>
     <div class="pay__list">
 
-      <article class="pay__card">
+      <article class="pay__card" data-aos="fade-right" data-aos-delay="100">
         <div class="pay__desc">
           <h3 class="title title--small">Наличный расчет</h3>
         </div>
       </article>
 
-      <article class="pay__card">
+      <article class="pay__card" data-aos="fade-left" data-aos-delay="200">
         <div class="pay__desc">
           <h3 class="title title--small">Безналичный расчет</h3>
         </div>
       </article>
-      <article class="pay__card">
+
+      <article class="pay__card" data-aos="fade-up" data-aos-delay="300">
         <div class="pay__desc">
           <h3 class="title title--small">Все виды сертификатов</h3>
         </div>
@@ -824,25 +832,24 @@
 
     <div class="advantages__left">
       <picture>
-        <!-- <source srcset="img/hero/slide-1-576.webp" type="image/webp" media="(max-width: 576px)">
-        <source srcset="img/hero/slide-1-1024.webp" type="image/webp" media="(max-width: 1439px)">
-        <source srcset="img/hero/slide-1-1440.webp" type="image/webp" media="(max-width: 1919px)"> -->
         <img loading="lazy" src="img/house-2.webp" class="promo__img img" height="500"
-          alt="Преимущества Территория комфорта">
+          alt="Преимущества Территория Комфорта">
       </picture>
     </div>
     <div class="advantages__right">
-      <h2 class="advantages__title title title--section">Преимущества</h2>
+      <h2 class="advantages__title title title--section" data-aos="fade-left">Преимущества</h2>
       <ul class="advantages__list">
 
-        <li class="advantages__card">
+        <li class="advantages__card" data-aos="fade-left" data-aos-duration="500"
+          data-aos-anchor-placement="center-bottom">
           <h3 class="advantages__card-title title title--small">ОПЫТ ЗАГОРОДНОГО СТРОИТЕЛЬСТВА БОЛЕЕ 10 ЛЕТ</h3>
           <p class="advantages__card-text">Наша компания обладает обширным опытом в загородном строительстве более 10
             лет, что позволяет нам
             гарантировать высокое качество и профессиональный подход к каждому проекту</p>
         </li>
 
-        <li class="advantages__card">
+        <li class="advantages__card" data-aos="fade-left" data-aos-duration="500"
+          data-aos-anchor-placement="center-bottom">
           <h3 class="advantages__card-title title title--small">СТРОИТЕЛЬСТВО ПО СНИП</h3>
           <p class="advantages__card-text">Мы осуществляем строительство согласно требованиям СНиП, обеспечивая
             безопасность, надежность и
@@ -850,13 +857,15 @@
             высоким стандартам качества в каждом проекте.</p>
         </li>
 
-        <li class="advantages__card">
+        <li class="advantages__card" data-aos="fade-left" data-aos-duration="500"
+          data-aos-anchor-placement="center-bottom">
           <h3 class="advantages__card-title title title--small">ОНЛАЙН ТРАНСЛЯЦИЯ ХОДА СТРОИТЕЛЬСТВА ВАШЕГО ДОМА</h3>
           <p class="advantages__card-text">Мы предоставляем возможность онлайн трансляции хода строительства вашего
             дома, чтобы вы могли в режиме реального времени отслеживать все этапы работ, даже находясь вдали от
             стройплощадки</p>
         </li>
-        <li class="advantages__card">
+        <li class="advantages__card" data-aos="fade-left" data-aos-duration="500"
+          data-aos-anchor-placement="center-bottom">
           <h3 class="advantages__card-title title title--small">КОНТРОЛЬ СТРОИТЕЛЬНЫХ РАБОТ НА КАЖДОМ ЭТАПЕ СТРОИТЬСТВА
           </h3>
           <p class="advantages__card-text">Мы осуществляем тщательный контроль строительных работ на каждом этапе
@@ -864,21 +873,24 @@
             качество и соответствие всем спецификациям и требованиям проекта</p>
         </li>
 
-        <li class="advantages__card">
+        <li class="advantages__card" data-aos="fade-left" data-aos-duration="500"
+          data-aos-anchor-placement="center-bottom">
           <h3 class="advantages__card-title title title--small">ГАРАНТИЯ ОТ 5 ЛЕТ</h3>
           <p class="advantages__card-text">Мы предоставляем гарантию на наши работы в течение 5 лет, что подчеркивает
             наше стремление к долгосрочным
             отношениям с клиентами и уверенность в качестве предоставляемых услуг</p>
         </li>
 
-        <li class="advantages__card">
+        <li class="advantages__card" data-aos="fade-left" data-aos-duration="500"
+          data-aos-anchor-placement="center-bottom">
           <h3 class="advantages__card-title title title--small">50+ ПОСТОРОЕННЫХ ДОМОВ ПО РТ</h3>
           <p class="advantages__card-text">Наш опыт в строительстве подтверждается более чем 50 успешно построенными
             домами, соответствующими
             требованиям и нормативам строительства, предусмотренным в Республиканских требованиях</p>
         </li>
 
-        <li class="advantages__card">
+        <li class="advantages__card" data-aos="fade-left" data-aos-duration="500"
+          data-aos-anchor-placement="center-bottom">
           <h3 class="advantages__card-title title title--small">ПЕРСОНАЛЬНЫЙ МЕНЕДЖЕР ПОД ВАШ ПРОЕКТ 24/7</h3>
           <p class="advantages__card-text">Каждому проекту назначается персональный менеджер, доступный 24/7,
             гарантируя индивидуальное внимание и
@@ -892,7 +904,7 @@
   <div class="map" id="map"></div>
 
   <div class="contacts__container container">
-    <div class="contacts__content">
+    <div class="contacts__content" data-aos="fade-right" data-aos-delay="100">
       <h2 class="contacts__title title title--section">Контакты</h2>
 
       <ul class="contacts__list">
@@ -902,7 +914,7 @@
         </li>
         <li class="contacts__item">
           <span class="contacts__name title">На почта:</span>
-          <a href="mailto:info@webseed.ru" class="contacts__link">info@webseed.ru</a>
+          <a href="mailto:info@internet.ru" class="contacts__link">info@internet.ru</a>
         </li>
         <li class="contacts__item">
           <span class="contacts__name title">Наш адрес:</span>
@@ -925,20 +937,6 @@
             </svg>
           </a>
         </li>
-        <!-- <li class="social__item">
-          <a href="mailto:" class="social__link" aria-label="Наша почта">
-            <svg class="social__icon">
-              <use xlink:href="img/sprite.svg#mail"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="tel:" class="social__link" aria-label="Наш телефон">
-            <svg class="social__icon">
-              <use xlink:href="img/sprite.svg#phone"></use>
-            </svg>
-          </a>
-        </li> -->
       </ul>
     </div>
   </div>
@@ -946,12 +944,15 @@
     </main>
     <footer class="footer">
   <div class="footer__container container">
-    <a href="#" class="footer__logo">
-      <svg class="footer__logo-icon">
-        <use xlink:href="img/sprite.svg#logo"></use>
-      </svg>
-    </a>
-    <div class="footer__nav ">
+    <div class="" data-aos="fade-up">
+      <a href="#" class="footer__logo">
+        <svg class="footer__logo-icon">
+          <use xlink:href="img/sprite.svg#logo"></use>
+        </svg>
+      </a>
+    </div>
+
+    <div class="footer__nav " data-aos="fade-up" data-aos-delay="100">
       <h3 class="footer__title title">Разделы</h3>
       <ul class="footer__nav-list">
         <li class="footer__nav-item">
@@ -972,7 +973,7 @@
         </li>
       </ul>
     </div>
-    <div class="footer__contacts-wrapp">
+    <div class="footer__contacts-wrapp" data-aos="fade-up" data-aos-delay="250">
       <ul class="footer__contacts">
         <li class="footer__contacts-item">
           <a class="footer__link" href="tel:+79990000099" aria-label="Наш телефон">+7 951 000-91-48</a>
@@ -983,7 +984,7 @@
         </li>
       </ul>
 
-      <ul class="footer__social social" title="">
+      <ul class="footer__social social" title="Социальные сети">
         <li class="social__item">
           <a href="#" target="_blank" class="social__link" aria-label="Наша страничка в telegram">
             <svg class="social__icon">
@@ -998,25 +999,52 @@
             </svg>
           </a>
         </li>
-        <!-- <li class="social__item">
-          <a href="mailto:stolica@truck-industry.ru" class="social__link" aria-label="Наша почта">
-            <svg class="social__icon">
-              <use xlink:href="img/sprite.svg#mail"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a href="tel:88002225892" class="social__link" aria-label="Наш телефон">
-            <svg class="social__icon">
-              <use xlink:href="img/sprite.svg#phone"></use>
-            </svg>
-          </a>
-        </li> -->
       </ul>
     </div>
 
   </div>
 </footer>
+    <div class="graph-modal">
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <div class="form--feedback-content">
+        <h3 class="graph-modal__title title">Оставьте заявку</h3>
+        <p class="graph-modal__text">Заполните форму прямо сейчас и начните взаимодействовать с нами!</p>
+        <p class="graph-modal__text">Доверьтесь нам и дайте нам возможность помочь вам достичь ваших целей. Мы стремимся
+          быть вашим надежным партнером и обеспечить ваш успех!</p>
+
+        <form action="/mail.php" method="post" class="graph-modal__form form form--modal">
+          <label class="form__label">
+            <input type="text" name="name" class="input-reset form__input input-name" placeholder="Имя">
+          </label>
+          <label class="form__label">
+            <input type="tel" name="phone" class="input-reset form__input input-tel" placeholder="Телефон">
+          </label>
+          <button class="btn btn--g-w form__btn">
+            <span>Отправить</span>
+            <svg class="arrow-btn arrow-btn--big">
+              <use xlink:href="img/sprite.svg#svgexport-18"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal-success">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <div class="form--success-content">
+        <h3 class="graph-modal__title title">Супер!</h3>
+        <p>Ваша заявка принята и уже находится в обработке</p>
+        <p>Мы с Вами свяжемся!</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Кнопка вызова модального окна с инф о успешной отправки формы-->
+<span id="success-form" class="visually-hidden" data-graph-path="modal-success"></span>
   </div>
 </body>
 

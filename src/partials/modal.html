@@ -1,0 +1,41 @@
+<div class="graph-modal">
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <div class="form--feedback-content">
+        <h3 class="graph-modal__title title">Оставьте заявку</h3>
+        <p class="graph-modal__text">Заполните форму прямо сейчас и начните взаимодействовать с нами!</p>
+        <p class="graph-modal__text">Доверьтесь нам и дайте нам возможность помочь вам достичь ваших целей. Мы стремимся
+          быть вашим надежным партнером и обеспечить ваш успех!</p>
+
+        <form action="/mail.php" method="post" class="graph-modal__form form form--modal">
+          <label class="form__label">
+            <input type="text" name="name" class="input-reset form__input input-name" placeholder="Имя">
+          </label>
+          <label class="form__label">
+            <input type="tel" name="phone" class="input-reset form__input input-tel" placeholder="Телефон">
+          </label>
+          <button class="btn btn--g-w form__btn">
+            <span>Отправить</span>
+            <svg class="arrow-btn arrow-btn--big">
+              <use xlink:href="img/sprite.svg#svgexport-18"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="modal-success">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <div class="form--success-content">
+        <h3 class="graph-modal__title title">Супер!</h3>
+        <p>Ваша заявка принята и уже находится в обработке</p>
+        <p>Мы с Вами свяжемся!</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Кнопка вызова модального окна с инф о успешной отправки формы-->
+<span id="success-form" class="visually-hidden" data-graph-path="modal-success"></span>

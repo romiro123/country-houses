@@ -45,19 +45,22 @@ export const validateForms = (selector, rules, afterSend) => {
 
     let xhr = new XMLHttpRequest();
 
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState === 4) {
-        if (xhr.status === 200) {
-          if (afterSend) {
-            afterSend();
-          }
-          console.log('Отправлено');
-        }
-      }
-    }
+    // xhr.onreadystatechange = function () {
+    //   if (xhr.readyState === 4) {
+    //     if (xhr.status === 200) {
+    //       if (afterSend) {
+    //         afterSend();
+    //       }
+    //       console.log('Отправлено');
+    //     }
+    //   }
+    // }
 
-    xhr.open('POST', 'mail.php', true);
-    xhr.send(formData);
+    // xhr.open('POST', 'mail.php', true);
+    // xhr.send(formData);
+
+    //после подключения отправки на почту убрать этот вызов функции
+    afterSend();
 
     ev.target.reset();
   })

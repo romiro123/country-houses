@@ -4,12 +4,57 @@
   @include mobile {
     margin-bottom: 50px;
   }
+
+  &__wrapp {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    margin: 50px 0;
+
+    @include tablet {
+      gap: 0;
+    }
+
+    @include small-tablet {
+      grid-template-columns: repeat(2, 1fr);
+      margin: 25px 0;
+    }
+  }
+
+  &__img {
+    grid-column: 4 / span 2;
+    width: 100%;
+
+    @include tablet {
+      position: absolute;
+      width: 350px;
+      right: 25px;
+      // z-index: -1;
+      top: -30px;
+    }
+
+    @include small-tablet {
+      display: none;
+    }
+  }
+
 }
 
 .accordion {
   &--features {
-    max-width: 900px;
-    margin: 25px 0 25px auto;
+    // max-width: 900px;
+    // margin: 25px 0 25px auto;
+    grid-column: 1 / span 3;
+
+    @include tablet {
+      grid-column: 1/span 4;
+      z-index: 1;
+    }
+
+    @include small-tablet {
+      grid-column: 1/span 2;
+    }
   }
 
   .ac {
@@ -43,7 +88,7 @@
       padding: 20px 10px;
 
       @include mobile {
-        padding: 20px 0px;
+        padding: 15px 7px;
       }
 
       & svg {
@@ -125,6 +170,7 @@
 
     &__panel {
       visibility: visible;
+      background-color: var(--bg-color);
     }
   }
 }
