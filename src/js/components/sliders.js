@@ -1,7 +1,13 @@
-import Swiper, { Navigation, Pagination, Autoplay, EffectCoverflow, EffectCreative } from 'swiper';
+import Swiper, {
+  Navigation,
+  Pagination,
+  Autoplay,
+  EffectCoverflow,
+  EffectCreative,
+} from "swiper";
 Swiper.use([Navigation, Pagination, Autoplay, EffectCoverflow, EffectCreative]);
 
-const swiperHero = new Swiper('.swiper--hero', {
+const swiperHero = new Swiper(".swiper--hero", {
   slidesPerView: 1,
   pagination: {
     el: ".swiper-pagination",
@@ -14,7 +20,7 @@ const swiperHero = new Swiper('.swiper--hero', {
   loop: true,
 });
 
-const swiperWorks = new Swiper('.swiper--works', {
+const swiperWorks = new Swiper(".swiper--works", {
   slidesPerView: 1,
   pagination: {
     el: ".swiper-pagination",
@@ -39,17 +45,17 @@ const swiperWorks = new Swiper('.swiper--works', {
       spaceBetween: 30,
     },
     1024: {
-      slidesPerView: 2,
+      slidesPerView: 2.5,
       spaceBetween: 30,
     },
     1440: {
-      slidesPerView: 2.8,
-      spaceBetween: 50,
-    }
+      slidesPerView: 3.2,
+      spaceBetween: 30,
+    },
   },
 });
 
-const swiperGallery = new Swiper('.swiper--gallery', {
+const swiperGallery = new Swiper(".swiper--gallery", {
   // centeredSlides: true,
   //loop: true,
   speed: 700,
@@ -76,8 +82,8 @@ const swiperGallery = new Swiper('.swiper--gallery', {
     1440: {
       slidesPerView: 4,
       spaceBetween: 30,
-    }
-  }
+    },
+  },
 });
 
 const swiperStage = new Swiper(".swiper--stage", {
@@ -98,14 +104,15 @@ const swiperStage = new Swiper(".swiper--stage", {
 
     clickable: true,
     renderBullet: function (index, t1) {
-      return '<li class="stage__pagination-item ' + t1 + '">'
-        +
-        (`${'0' + (index + 1)}`)
-        +
-        '<span class="stage__pagination-text"> Этап' + '</span>'
-        +
-        '</li>';
-
+      return (
+        '<li class="stage__pagination-item ' +
+        t1 +
+        '">' +
+        `${"0" + (index + 1)}` +
+        '<span class="stage__pagination-text"> Этап' +
+        "</span>" +
+        "</li>"
+      );
     },
   },
 });

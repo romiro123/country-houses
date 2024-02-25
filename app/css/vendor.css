@@ -2667,14 +2667,14 @@ button.swiper-pagination-bullet {
   }
 }
 .f-fadeIn {
-  -webkit-animation: var(--f-transition-duration, 0.2s) ease both f-fadeIn;
-  animation: var(--f-transition-duration, 0.2s) ease both f-fadeIn;
+  -webkit-animation: var(--f-transition-duration, 0.2s) var(--f-transition-easing, ease) var(--f-transition-delay, 0s) both f-fadeIn;
+  animation: var(--f-transition-duration, 0.2s) var(--f-transition-easing, ease) var(--f-transition-delay, 0s) both f-fadeIn;
   z-index: 2;
 }
 
 .f-fadeOut {
-  -webkit-animation: var(--f-transition-duration, 0.2s) ease both f-fadeOut;
-  animation: var(--f-transition-duration, 0.2s) ease both f-fadeOut;
+  -webkit-animation: var(--f-transition-duration, 0.2s) var(--f-transition-easing, ease) var(--f-transition-delay, 0s) both f-fadeOut;
+  animation: var(--f-transition-duration, 0.2s) var(--f-transition-easing, ease) var(--f-transition-delay, 0s) both f-fadeOut;
   z-index: 1;
 }
 
@@ -3153,6 +3153,10 @@ button.swiper-pagination-bullet {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
+}
+
+.f-carousel__nav .f-button:disabled, .fancybox__nav .f-button:disabled {
+  pointer-events: none;
 }
 
 html.with-fancybox {

@@ -4,22 +4,25 @@
   @include mobile {
     margin-bottom: 50px;
   }
-
+  &__swiper {
+    padding: 0 30px;
+    margin-bottom: 50px;
+  }
   &__title {}
 
   &__list {}
 
   &__item {
     height: auto;
-    margin-top: 10px;
-    margin-left: 1px;
-    margin-bottom: 20px;
+    // margin-top: 10px;
+    // margin-left: 1px;
+    // margin-bottom: 20px;
 
-    @include big-desktop {
-      margin-top: 0;
-      margin-left: 0;
-      margin-bottom: 20px;
-    }
+    // @include big-desktop {
+    //   margin-top: 0;
+    //   margin-left: 0;
+    //   margin-bottom: 20px;
+    // }
   }
 
   &__card {}
@@ -35,14 +38,14 @@
 }
 
 .swiper--works {
-  margin-right: 0;
-  margin-left: calc((100vw - var(--container-width)) /2);
+  // margin-right: 0;
+  // margin-left: calc((100vw - var(--container-width)) /2);
 
-  @include big-desktop {
-    margin: 0 auto;
-    padding: 0 var(--container-offset);
-    max-width: var(--container-width);
-  }
+  // @include big-desktop {
+  //   margin: 0 auto;
+  //   padding: 0 var(--container-offset);
+  //   max-width: var(--container-width);
+  // }
 }
 
 .card {
