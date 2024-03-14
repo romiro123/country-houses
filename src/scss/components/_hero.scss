@@ -19,6 +19,10 @@
     @include small-tablet {
       padding: 0 var(--container-offset);
     }
+
+    @include mobile {
+      padding: 50px var(--container-offset) 0;
+    }
   }
 
   &__content {
@@ -35,7 +39,11 @@
   }
 
   &__wrapp {
-    max-width: 800px;
+    max-width: 1000px;
+
+    @include big-desktop {
+      max-width: 800px;
+    }
   }
 
   &__swiper {
@@ -44,7 +52,12 @@
     @include big-desktop {
       height: 700px;
     }
+
+    @include mobile {
+      height: 600px
+    }
   }
+
 
   &__slide {
 

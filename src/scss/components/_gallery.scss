@@ -31,15 +31,16 @@
     border-radius: 5px;
 
     &:hover {
-      & .gallery__description {
-        visibility: visible;
-        opacity: 1;
-        transform: translateX(0);
+      //анимация появления названия
+      // & .gallery__description {
+      //   visibility: visible;
+      //   opacity: 1;
+      //   transform: translateX(0);
 
-        @include tablet {
-          transform: none;
-        }
-      }
+      //   @include tablet {
+      //     transform: none;
+      //   }
+      // }
 
       & .gallery__img {
         transform: scale(1.1);
@@ -73,13 +74,17 @@
     line-height: 18px;
     font-weight: 600;
     padding: 15px 20px;
+    //
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
 
     @include tablet {
       top: 25px;
       left: 25px;
-      visibility: visible;
-      opacity: 1;
-      transform: translateX(0);
+      // visibility: visible;
+      // opacity: 1;
+      // transform: translateX(0);
     }
 
     @include small-tablet {
